@@ -94,6 +94,7 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button1.Size = new Size(67, 55);
             guna2Button1.TabIndex = 3;
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // panel1
             // 
