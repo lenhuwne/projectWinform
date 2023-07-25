@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllProduct));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -48,6 +48,7 @@
             Column5 = new DataGridViewImageColumn();
             fileSystemWatcher1 = new FileSystemWatcher();
             fontDialog1 = new FontDialog();
+            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -69,12 +70,12 @@
             // guna2PictureBox1
             // 
             guna2PictureBox1.BackColor = Color.Transparent;
-            guna2PictureBox1.CustomizableEdges = customizableEdges1;
+            guna2PictureBox1.CustomizableEdges = customizableEdges7;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
             guna2PictureBox1.Location = new Point(-3, 0);
             guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2PictureBox1.Size = new Size(42, 34);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             guna2PictureBox1.TabIndex = 3;
@@ -84,7 +85,7 @@
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges3;
+            guna2Button1.CustomizableEdges = customizableEdges9;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -95,13 +96,14 @@
             guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
             guna2Button1.Location = new Point(1006, 0);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Button1.Size = new Size(43, 35);
             guna2Button1.TabIndex = 3;
             guna2Button1.Click += guna2Button1_Click;
             // 
             // panel2
             // 
+            panel2.Controls.Add(label1);
             panel2.Controls.Add(txt_search);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 34);
@@ -114,7 +116,7 @@
             txt_search.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             txt_search.BorderColor = Color.Black;
             txt_search.BorderRadius = 20;
-            txt_search.CustomizableEdges = customizableEdges5;
+            txt_search.CustomizableEdges = customizableEdges11;
             txt_search.DefaultText = "";
             txt_search.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txt_search.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -129,7 +131,7 @@
             txt_search.PasswordChar = '\0';
             txt_search.PlaceholderText = "Search";
             txt_search.SelectedText = "";
-            txt_search.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txt_search.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txt_search.Size = new Size(250, 42);
             txt_search.TabIndex = 0;
             // 
@@ -190,6 +192,16 @@
             fileSystemWatcher1.EnableRaisingEvents = true;
             fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(110, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(35, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Test";
+            label1.Click += label1_Click;
+            // 
             // AllProduct
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -205,6 +217,7 @@
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_all).EndInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
             ResumeLayout(false);
@@ -225,5 +238,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private FileSystemWatcher fileSystemWatcher1;
         private FontDialog fontDialog1;
+        private Label label1;
     }
 }
