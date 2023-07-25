@@ -37,7 +37,7 @@ namespace QLBH_SOFTWARE
                     if (dtr.Read())
                     {
                         MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        TRANGCHU tc = new TRANGCHU();
+                        App tc = new App();
                         tc.Show();
                         this.Hide();
                     }

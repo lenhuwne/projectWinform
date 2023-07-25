@@ -58,7 +58,6 @@ D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLB
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.AllProduct.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Cash.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Chi_tiết_hóa_đơn.resources
-D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Form1.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Hóa_đơn.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Khách_hàng.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Form4.resources
@@ -69,7 +68,6 @@ D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLB
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Form3.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Signup.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Thanh_toán.resources
-D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.TRANGCHU.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.csproj.GenerateResource.cache
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.GeneratedMSBuildEditorConfig.editorconfig
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.AssemblyInfoInputs.cache
@@ -81,3 +79,5 @@ D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\ref
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.pdb
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.genruntimeconfig.cache
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\ref\QLBH_SOFTWARE.dll
+D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.App.resources
+D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Game.resources

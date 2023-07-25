@@ -4,13 +4,16 @@
     <Compile Update="AllProduct.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="App.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Cash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CHITIETHOADON.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Game.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="HOADON.cs">
@@ -40,9 +43,6 @@
     <Compile Update="THANHTOAN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TRANGCHU.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <None Update="CHITIETHOADON.cs">
       <SubType>Form</SubType>
     </None>
@@ -62,9 +62,6 @@
       <SubType>Form</SubType>
     </None>
     <None Update="THANHTOAN.cs">
-      <SubType>Form</SubType>
-    </None>
-    <None Update="TRANGCHU.cs">
       <SubType>Form</SubType>
     </None>
     <None Update="SANPHAM.cs">
