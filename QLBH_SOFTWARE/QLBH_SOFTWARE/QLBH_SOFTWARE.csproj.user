@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AllProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CHITIETHOADON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HOADON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KHACHHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LOAISANPHAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NHANVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SANPHAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="THANHTOAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TRANGCHU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <None Update="CHITIETHOADON.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="HOADON.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="KHACHHANG.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="Login.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="NHANVIEN.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="PRODUCT.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="THANHTOAN.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="TRANGCHU.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="SANPHAM.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="LOAISANPHAM.cs">
+      <SubType>Form</SubType>
+    </None>
+  </ItemGroup>
+</Project>
