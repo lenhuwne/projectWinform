@@ -6,7 +6,7 @@ namespace QLBH_SOFTWARE
 
     public partial class Login : Form
     {
-        string connect = @"Data Source=LAPTOP-DRPTOLNJ\LENHU;Initial Catalog=Centrix;Integrated Security=True";
+        string connect = @"Data Source=ANXEMER;Initial Catalog=DreamyShop;Integrated Security=True";
         SqlConnection conn;
         SqlCommand cmd;
         SqlDataAdapter adt;

@@ -81,3 +81,4 @@ D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLB
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\ref\QLBH_SOFTWARE.dll
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.App.resources
 D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Game.resources
+D:\lenhu\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.Home.resources
