@@ -69,7 +69,7 @@ namespace QLBH_SOFTWARE
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -77,6 +77,42 @@ namespace QLBH_SOFTWARE
             Login lg = new Login();
             lg.Show();
             this.Hide();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_pass.UseSystemPasswordChar = !txt_pass.UseSystemPasswordChar;
+            if (txt_pass.UseSystemPasswordChar)
+            {
+                checkBox1.Text = "show";
+            }
+            else
+            {
+                checkBox1.Text = "hide";
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_confirm.UseSystemPasswordChar = !txt_confirm.UseSystemPasswordChar;
+            if (txt_confirm.UseSystemPasswordChar)
+            {
+                checkBox2.Text = "show";
+            }
+            else
+            {
+                checkBox2.Text = "hide";
+            }
+        }
+
+        private void Signup_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

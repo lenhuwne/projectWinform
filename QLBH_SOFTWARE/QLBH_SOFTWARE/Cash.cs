@@ -26,5 +26,17 @@ namespace QLBH_SOFTWARE
         {
 
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Home h = new Home();
+            h.Show();
+            this.Hide();
+        }
     }
 }

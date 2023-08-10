@@ -11,6 +11,7 @@ namespace QLBH_SOFTWARE
         SqlCommand cmd;
         SqlDataAdapter adt;
         DataTable dt;
+        public string username = "";
         public Login()
         {
             InitializeComponent();
@@ -31,20 +32,31 @@ namespace QLBH_SOFTWARE
                     conn.Open();
                     string tk = txtemail.Text;
                     string mk = txtpass.Text;
-                    string sql = "select * from ACCOUNT where USERNAME ='" + tk + "' and PASSWORD ='" + mk + "' ";
+                    string sql = "select * from ACCOUNT where USERNAME ='" + tk + "' and PASSWORD ='" + mk + "'and isAdmin='true'";
+
                     cmd = new SqlCommand(sql, conn);
+
                     SqlDataReader dtr = cmd.ExecuteReader();
+
                     if (dtr.Read())
                     {
+
                         MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        App tc = new App();
-                        tc.Show();
+                        TemporaryData.Username = tk;
+                        Home home = new Home();
+                        home.Show();
                         this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Đăng nhập thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //MessageBox.Show("Đăng nhập thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TemporaryData.Username = tk;
+                        Home_Cus home = new Home_Cus();
+                        home.Show();
+                        this.Hide();
                     }
+
                 }
             }
             catch (Exception ex)
@@ -92,6 +104,11 @@ namespace QLBH_SOFTWARE
             Signup sg = new Signup();
             sg.Show();
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
