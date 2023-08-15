@@ -4294,6 +4294,18 @@
         oqepAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="addProduct.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAWpJREFUWEft
+        loFNxDAMRTsCIzACI7ABbAIbwAawAWwCG8AmsAH4nfolc1zi31zhQLonfalKfm3XadJOR/4bp6Gr0FPo
+        JfQxi2vGmMOzOuchEihhJbxnoVW4Dynwe+gxdBnKCbhmjDk88t+FhjkJ6akJejuPVeDBq0KI4dz3jeeQ
+        ko+0k3tyEYtQ2wkwVP0M96oIYlrwwu3z5NvkTljx1HrWsQIfqiAWvnIp2MMY3da7BeSl6J4T1yFMbCcH
+        twAgJl5yNFH72dMOSwogJl5yNHkNYXJfviUFEBMvx3aTXkDNudpFb26Dc7OrXfTmNvzGEpCjycFfwoNv
+        Qx1Eb6G1DyJi4i1/WH7yKO62X+hjRMXuy9iDGHp6O54+x+5StMittz/HQksx2on85Fbrt6H6XMTNPFaB
+        B29Ovk8Xv/yUEvQhdBHKXeGaMeaUGC1uewsSqBuO8I4sWwl7mIOEBDq2EdeMMVfu8yN/iGn6BH50wJlf
+        LqOdAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btn_back.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

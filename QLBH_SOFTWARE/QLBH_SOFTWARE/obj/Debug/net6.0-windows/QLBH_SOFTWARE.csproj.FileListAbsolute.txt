@@ -167,3 +167,12 @@ D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\Q
 D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormGpt.resources
 D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFromHoctap.resources
 D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.CashProduct.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormOffice.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormIp.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormYtb.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormAllG.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormCT.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormGGD.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormGHD.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormGOPW.resources
+D:\winform\projectWinform\QLBH_SOFTWARE\QLBH_SOFTWARE\obj\Debug\net6.0-windows\QLBH_SOFTWARE.ChildFormSurvi.resources

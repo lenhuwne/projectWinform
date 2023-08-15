@@ -50,6 +50,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btn_thoat = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
             panel7 = new Panel();
@@ -72,6 +73,8 @@
             guna2vSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             panel5 = new Panel();
             panelchildapp = new Panel();
+            label9 = new Label();
+            addProduct = new Guna.UI2.WinForms.Guna2CircleButton();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             panel5.SuspendLayout();
@@ -187,6 +190,7 @@
             btn_hoctap.Size = new Size(185, 44);
             btn_hoctap.TabIndex = 3;
             btn_hoctap.Text = "Hỗ trợ học tập";
+            btn_hoctap.Click += btn_hoctap_Click;
             // 
             // txtsearch
             // 
@@ -231,6 +235,7 @@
             btn_office.Size = new Size(185, 44);
             btn_office.TabIndex = 3;
             btn_office.Text = " Office 365";
+            btn_office.Click += btn_office_Click;
             // 
             // btn_ip
             // 
@@ -248,6 +253,7 @@
             btn_ip.Size = new Size(185, 44);
             btn_ip.TabIndex = 3;
             btn_ip.Text = "Fake IP VN";
+            btn_ip.Click += btn_ip_Click;
             // 
             // btn_ytb
             // 
@@ -265,6 +271,7 @@
             btn_ytb.Size = new Size(185, 44);
             btn_ytb.TabIndex = 3;
             btn_ytb.Text = "Youtube Premium";
+            btn_ytb.Click += btn_ytb_Click;
             // 
             // btn_back
             // 
@@ -362,6 +369,8 @@
             // panel5
             // 
             panel5.BackColor = SystemColors.ButtonHighlight;
+            panel5.Controls.Add(label9);
+            panel5.Controls.Add(addProduct);
             panel5.Controls.Add(panelchildapp);
             panel5.Controls.Add(guna2vSeparator1);
             panel5.Controls.Add(guna2Separator1);
@@ -393,6 +402,32 @@
             panelchildapp.Size = new Size(1053, 623);
             panelchildapp.TabIndex = 53;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(354, 12);
+            label9.Name = "label9";
+            label9.Size = new Size(137, 20);
+            label9.TabIndex = 59;
+            label9.Text = "Thêm vào giỏ hàng";
+            // 
+            // addProduct
+            // 
+            addProduct.DisabledState.BorderColor = Color.DarkGray;
+            addProduct.DisabledState.CustomBorderColor = Color.DarkGray;
+            addProduct.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addProduct.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addProduct.FillColor = SystemColors.ButtonHighlight;
+            addProduct.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            addProduct.ForeColor = Color.White;
+            addProduct.Image = (Image)resources.GetObject("addProduct.Image");
+            addProduct.Location = new Point(297, 2);
+            addProduct.Name = "addProduct";
+            addProduct.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            addProduct.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            addProduct.Size = new Size(51, 42);
+            addProduct.TabIndex = 58;
+            // 
             // App_Cus
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -408,6 +443,7 @@
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
             panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -435,5 +471,7 @@
         private Guna.UI2.WinForms.Guna2VSeparator guna2vSeparator1;
         private Panel panel5;
         private Panel panelchildapp;
+        private Label label9;
+        private Guna.UI2.WinForms.Guna2CircleButton addProduct;
     }
 }

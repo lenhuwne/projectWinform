@@ -17,13 +17,40 @@
     <Compile Update="CashProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChildFormApp.cs">
+    <Compile Update="ChildformGame\ChildFormAllG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChildFormGpt.cs">
+    <Compile Update="ChildformApp\ChildFormApp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChildFormHome.cs">
+    <Compile Update="ChildformApp\ChildFormGpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformApp\ChildFormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformApp\ChildFormIp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformApp\ChildFormOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformApp\ChildFormYtb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformGame\ChildFormCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformGame\ChildFormGGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformGame\ChildFormGHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformGame\ChildFormGOPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildformGame\ChildFormSurvi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Customer.cs">
@@ -32,7 +59,7 @@
     <Compile Update="Game_Cus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChildFromHoctap.cs">
+    <Compile Update="ChildformApp\ChildFromHoctap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Home_Cus.cs">

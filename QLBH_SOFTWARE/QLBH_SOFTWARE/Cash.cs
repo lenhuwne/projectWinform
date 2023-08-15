@@ -57,8 +57,14 @@ namespace QLBH_SOFTWARE
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            Home h = new Home();
-            h.Show();
+            if (homeC != null && !homeC.IsDisposed)
+            {
+                homeC.Show();
+            }
+            else if (home != null && !home.IsDisposed)
+            {
+                home.Show();
+            }
             this.Hide();
         }
 
@@ -124,12 +130,12 @@ namespace QLBH_SOFTWARE
                 if (dr.HasRows)
                 {
                     transno = dr[0].ToString();
-                    count = int.Parse(transno.Substring(0, 4));
+                    count = int.Parse(transno.Substring(8, 4));
                     lbTransaction.Text = sdate + (count + 1);
                 }
                 else
                 {
-                    transno =  "1001";
+                    transno = (count + "1001");
                     lbTransaction.Text = transno;
                 }
                 dr.Close();

@@ -16,14 +16,18 @@ namespace QLBH_SOFTWARE
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         DBContext dbcon = new DBContext();
+        Home_Cus home;
+        CashProduct cash;
         private int newWidth = 150; // Kích thước mới của ảnh (độ rộng)
         private int newHeight = 150;
         private List<string> imageUrls = new List<string>();
-        public App_Cus()
+        public App_Cus(Home_Cus form)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.connection());
-            
+            openChildForm(new ChildFormApp());
+            home = form;
+
         }
 
         private void btn_thoat_Click(object sender, EventArgs e)
@@ -40,7 +44,6 @@ namespace QLBH_SOFTWARE
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            Home_Cus home = new Home_Cus();
             home.Show();
             this.Hide();
         }
@@ -49,6 +52,38 @@ namespace QLBH_SOFTWARE
         {
 
             lbl_username.Text = TemporaryData.Username;
+        }
+
+
+        private void btn_gpt_Click(object sender, EventArgs e)
+        {
+
+            openChildForm(new ChildFormGpt());
+        }
+
+        private void btn_all_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChildFormApp());
+        }
+
+        private void btn_hoctap_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChildFromHoctap());
+        }
+
+        private void btn_office_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChildFormOffice());
+        }
+
+        private void btn_ip_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChildFormIp());
+        }
+
+        private void btn_ytb_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChildFormYtb());
         }
         #region Method
         private Form activeForm = null;
@@ -71,16 +106,5 @@ namespace QLBH_SOFTWARE
         }
 
         #endregion Method
-
-        private void btn_gpt_Click(object sender, EventArgs e)
-        {
-
-            openChildForm(new ChildFormGpt());
-        }
-
-        private void btn_all_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ChildFormApp());
-        }
     }
 }

@@ -44,14 +44,13 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game_Cus));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btn_log = new Guna.UI2.WinForms.Guna2Button();
             btn_adventure = new Guna.UI2.WinForms.Guna2Button();
             btn_horror = new Guna.UI2.WinForms.Guna2Button();
@@ -63,11 +62,11 @@
             lbl_username = new Label();
             guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             panel5 = new Panel();
+            panelchilgame = new Panel();
             guna2vSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             guna2vSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             btn_back = new Guna.UI2.WinForms.Guna2Button();
-            txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             txtsearch = new Guna.UI2.WinForms.Guna2TextBox();
             panel6 = new Panel();
             panel14 = new Panel();
@@ -75,6 +74,8 @@
             panel7 = new Panel();
             panel12 = new Panel();
             btn_thoat = new Guna.UI2.WinForms.Guna2Button();
+            label9 = new Label();
+            addProduct = new Guna.UI2.WinForms.Guna2CircleButton();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             panel5.SuspendLayout();
@@ -115,6 +116,7 @@
             btn_adventure.Size = new Size(185, 44);
             btn_adventure.TabIndex = 3;
             btn_adventure.Text = "Giải đố";
+            btn_adventure.Click += btn_adventure_Click;
             // 
             // btn_horror
             // 
@@ -132,6 +134,7 @@
             btn_horror.Size = new Size(185, 44);
             btn_horror.TabIndex = 3;
             btn_horror.Text = "Chiến thuật";
+            btn_horror.Click += btn_horror_Click;
             // 
             // btn_openworld
             // 
@@ -149,6 +152,7 @@
             btn_openworld.Size = new Size(185, 44);
             btn_openworld.TabIndex = 3;
             btn_openworld.Text = "Thế Giới Mở";
+            btn_openworld.Click += btn_openworld_Click;
             // 
             // btn_sinhton
             // 
@@ -166,6 +170,7 @@
             btn_sinhton.Size = new Size(185, 44);
             btn_sinhton.TabIndex = 3;
             btn_sinhton.Text = "Sinh Tồn";
+            btn_sinhton.Click += btn_sinhton_Click;
             // 
             // btn_hanhdong
             // 
@@ -183,6 +188,7 @@
             btn_hanhdong.Size = new Size(185, 44);
             btn_hanhdong.TabIndex = 3;
             btn_hanhdong.Text = "Hành Động";
+            btn_hanhdong.Click += btn_hanhdong_Click;
             // 
             // btn_all
             // 
@@ -203,6 +209,7 @@
             btn_all.Size = new Size(207, 44);
             btn_all.TabIndex = 3;
             btn_all.Text = "Tất cả sản phẩm";
+            btn_all.Click += btn_all_Click;
             // 
             // panel4
             // 
@@ -242,6 +249,9 @@
             // panel5
             // 
             panel5.BackColor = SystemColors.ButtonHighlight;
+            panel5.Controls.Add(label9);
+            panel5.Controls.Add(addProduct);
+            panel5.Controls.Add(panelchilgame);
             panel5.Controls.Add(guna2vSeparator1);
             panel5.Controls.Add(guna2Separator1);
             panel5.Controls.Add(guna2vSeparator2);
@@ -251,7 +261,6 @@
             panel5.Controls.Add(btn_hanhdong);
             panel5.Controls.Add(btn_horror);
             panel5.Controls.Add(btn_openworld);
-            panel5.Controls.Add(txt_search);
             panel5.Controls.Add(btn_sinhton);
             panel5.Controls.Add(txtsearch);
             panel5.Controls.Add(panel6);
@@ -265,6 +274,13 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(1262, 680);
             panel5.TabIndex = 10;
+            // 
+            // panelchilgame
+            // 
+            panelchilgame.Location = new Point(206, 55);
+            panelchilgame.Name = "panelchilgame";
+            panelchilgame.Size = new Size(1053, 622);
+            panelchilgame.TabIndex = 42;
             // 
             // guna2vSeparator1
             // 
@@ -290,7 +306,7 @@
             // 
             // btn_back
             // 
-            btn_back.CustomizableEdges = customizableEdges16;
+            btn_back.CustomizableEdges = customizableEdges17;
             btn_back.DisabledState.BorderColor = Color.DarkGray;
             btn_back.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_back.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -302,37 +318,10 @@
             btn_back.ImageSize = new Size(30, 30);
             btn_back.Location = new Point(206, 4);
             btn_back.Name = "btn_back";
-            btn_back.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            btn_back.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btn_back.Size = new Size(60, 45);
             btn_back.TabIndex = 38;
             btn_back.Click += btn_back_Click;
-            // 
-            // txt_search
-            // 
-            txt_search.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            txt_search.BackColor = SystemColors.ButtonHighlight;
-            txt_search.BorderColor = Color.Black;
-            txt_search.BorderRadius = 5;
-            txt_search.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            txt_search.CustomizableEdges = customizableEdges18;
-            txt_search.DefaultText = "";
-            txt_search.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_search.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_search.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_search.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_search.FillColor = SystemColors.ButtonFace;
-            txt_search.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_search.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_search.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_search.IconLeftSize = new Size(38, 30);
-            txt_search.Location = new Point(787, 3);
-            txt_search.Name = "txt_search";
-            txt_search.PasswordChar = '\0';
-            txt_search.PlaceholderText = "Tìm kiếm sản phẩm";
-            txt_search.SelectedText = "";
-            txt_search.ShadowDecoration.CustomizableEdges = customizableEdges19;
-            txt_search.Size = new Size(351, 45);
-            txt_search.TabIndex = 36;
             // 
             // txtsearch
             // 
@@ -340,7 +329,7 @@
             txtsearch.BackColor = SystemColors.ButtonHighlight;
             txtsearch.BorderColor = Color.Black;
             txtsearch.BorderRadius = 20;
-            txtsearch.CustomizableEdges = customizableEdges20;
+            txtsearch.CustomizableEdges = customizableEdges19;
             txtsearch.DefaultText = "";
             txtsearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtsearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -357,7 +346,7 @@
             txtsearch.PasswordChar = '\0';
             txtsearch.PlaceholderText = "Search";
             txtsearch.SelectedText = "";
-            txtsearch.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            txtsearch.ShadowDecoration.CustomizableEdges = customizableEdges20;
             txtsearch.Size = new Size(0, 0);
             txtsearch.TabIndex = 35;
             // 
@@ -409,7 +398,7 @@
             // 
             // btn_thoat
             // 
-            btn_thoat.CustomizableEdges = customizableEdges22;
+            btn_thoat.CustomizableEdges = customizableEdges21;
             btn_thoat.DisabledState.BorderColor = Color.DarkGray;
             btn_thoat.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_thoat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -421,10 +410,37 @@
             btn_thoat.ImageSize = new Size(25, 25);
             btn_thoat.Location = new Point(1209, 0);
             btn_thoat.Name = "btn_thoat";
-            btn_thoat.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            btn_thoat.ShadowDecoration.CustomizableEdges = customizableEdges22;
             btn_thoat.Size = new Size(50, 50);
             btn_thoat.TabIndex = 2;
             btn_thoat.Click += btn_thoat_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(347, 12);
+            label9.Name = "label9";
+            label9.Size = new Size(137, 20);
+            label9.TabIndex = 59;
+            label9.Text = "Thêm vào giỏ hàng";
+            // 
+            // addProduct
+            // 
+            addProduct.DisabledState.BorderColor = Color.DarkGray;
+            addProduct.DisabledState.CustomBorderColor = Color.DarkGray;
+            addProduct.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addProduct.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addProduct.FillColor = SystemColors.ButtonHighlight;
+            addProduct.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            addProduct.ForeColor = Color.White;
+            addProduct.Image = (Image)resources.GetObject("addProduct.Image");
+            addProduct.Location = new Point(298, 3);
+            addProduct.Name = "addProduct";
+            addProduct.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            addProduct.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            addProduct.Size = new Size(54, 46);
+            addProduct.TabIndex = 58;
+            addProduct.Click += addProduct_Click;
             // 
             // Game_Cus
             // 
@@ -441,6 +457,7 @@
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
             panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             panel7.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -463,11 +480,13 @@
         private Guna.UI2.WinForms.Guna2Button btn_thoat;
         private Panel panel6;
         private Guna.UI2.WinForms.Guna2Button btn_log;
-        private Guna.UI2.WinForms.Guna2TextBox txt_search;
         private Guna.UI2.WinForms.Guna2TextBox txtsearch;
         private Guna.UI2.WinForms.Guna2Button btn_back;
         private Guna.UI2.WinForms.Guna2VSeparator guna2vSeparator1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2VSeparator guna2vSeparator2;
+        private Panel panelchilgame;
+        private Label label9;
+        private Guna.UI2.WinForms.Guna2CircleButton addProduct;
     }
 }

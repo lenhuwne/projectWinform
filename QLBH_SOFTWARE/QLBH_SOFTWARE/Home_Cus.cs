@@ -37,7 +37,7 @@ namespace QLBH_SOFTWARE
         private void btn_App_Click(object sender, EventArgs e)
         {
             lbl_username.Text = TemporaryData.Username;
-            App_Cus app_Cus = new App_Cus();
+            App_Cus app_Cus = new App_Cus(this);
             app_Cus.Show();
             this.Hide();
         }

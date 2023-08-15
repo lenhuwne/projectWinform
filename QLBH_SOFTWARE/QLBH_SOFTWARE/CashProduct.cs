@@ -14,6 +14,7 @@ namespace QLBH_SOFTWARE
     public partial class CashProduct : Form
     {
         public string cid;
+        public string idCate;
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         DBContext dbcon = new DBContext();
@@ -68,7 +69,7 @@ namespace QLBH_SOFTWARE
         public void LoadProduct()
         {
             dgvProduct.Rows.Clear();
-            cmd = new SqlCommand("SELECT P.idP, P.nameP, P.price, P.[description], C.nameCategory\r\nFROM Product P\r\nJOIN Category C ON P.cateid = C.idcat \r\nWHERE P.nameP LIKE N'%" + txtsearch.Text + "%'\r\n   OR C.nameCategory LIKE N'%" + txtsearch.Text + "%'", cn);
+            cmd = new SqlCommand("SELECT P.idP, P.nameP, P.price, P.[description], C.nameCategory\r\nFROM Product P\r\nJOIN Category C ON P.cateid = C.idcat \r\nWHERE P.nameP LIKE N'%" + idCate + "%'\r\n   OR P.cateId LIKE N'%" + txtsearch.Text + "%'", cn);
             cn.Open();
             dr = cmd.ExecuteReader();
             while (dr.Read())
