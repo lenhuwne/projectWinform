@@ -49,8 +49,10 @@
             btn_App = new Guna.UI2.WinForms.Guna2Button();
             btn_all = new Guna.UI2.WinForms.Guna2Button();
             panel4 = new Panel();
-            lbl_username = new Label();
+            txtName = new Label();
+            txtid = new Label();
             guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            lbl_username = new Label();
             panel10 = new Panel();
             btn_thoat = new Guna.UI2.WinForms.Guna2Button();
             panel9 = new Panel();
@@ -69,7 +71,6 @@
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             btn_giohang = new Guna.UI2.WinForms.Guna2Button();
             panelChild = new Panel();
-            txtid = new Label();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -152,8 +153,8 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(txtName);
             panel4.Controls.Add(txtid);
-            panel4.Controls.Add(lbl_username);
             panel4.Controls.Add(guna2CirclePictureBox1);
             panel4.Controls.Add(guna2Button2);
             panel4.Location = new Point(21, 12);
@@ -161,16 +162,23 @@
             panel4.Size = new Size(162, 156);
             panel4.TabIndex = 3;
             // 
-            // lbl_username
+            // txtName
             // 
-            lbl_username.AutoSize = true;
-            lbl_username.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_username.Location = new Point(34, 87);
-            lbl_username.Name = "lbl_username";
-            lbl_username.Size = new Size(86, 20);
-            lbl_username.TabIndex = 1;
-            lbl_username.Text = "Username";
-            lbl_username.Click += lbl_username_Click;
+            txtName.AutoSize = true;
+            txtName.Location = new Point(47, 85);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(50, 20);
+            txtName.TabIndex = 9;
+            txtName.Text = "label1";
+            // 
+            // txtid
+            // 
+            txtid.AutoSize = true;
+            txtid.Location = new Point(57, 105);
+            txtid.Name = "txtid";
+            txtid.Size = new Size(50, 20);
+            txtid.TabIndex = 8;
+            txtid.Text = "label1";
             // 
             // guna2CirclePictureBox1
             // 
@@ -184,6 +192,17 @@
             guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             guna2CirclePictureBox1.TabIndex = 0;
             guna2CirclePictureBox1.TabStop = false;
+            // 
+            // lbl_username
+            // 
+            lbl_username.AutoSize = true;
+            lbl_username.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_username.Location = new Point(221, 19);
+            lbl_username.Name = "lbl_username";
+            lbl_username.Size = new Size(86, 20);
+            lbl_username.TabIndex = 1;
+            lbl_username.Text = "Username";
+            lbl_username.Click += lbl_username_Click;
             // 
             // panel10
             // 
@@ -377,21 +396,13 @@
             panelChild.Size = new Size(1038, 525);
             panelChild.TabIndex = 48;
             // 
-            // txtid
-            // 
-            txtid.AutoSize = true;
-            txtid.Location = new Point(57, 105);
-            txtid.Name = "txtid";
-            txtid.Size = new Size(50, 20);
-            txtid.TabIndex = 8;
-            txtid.Text = "label1";
-            // 
             // Home_Cus
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1262, 680);
+            Controls.Add(lbl_username);
             Controls.Add(panelChild);
             Controls.Add(guna2vSeparator1);
             Controls.Add(btn_giohang);
@@ -453,5 +464,6 @@
         private Panel panelChild;
         public Label lbl_username;
         public Label txtid;
+        public Label txtName;
     }
 }

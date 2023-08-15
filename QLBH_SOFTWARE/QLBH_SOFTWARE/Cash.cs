@@ -30,14 +30,7 @@ namespace QLBH_SOFTWARE
             getTransno();
             loadCash();
         }
-        //    public Cash(Login form)
-        //    {
-        //        InitializeComponent();
-        //        cn = new SqlConnection(dbcon.connection());
-        //        formL = form;
-        //        getTransno();
-        //    loadCash();
-        //}
+       
         public Cash(Home form)
         {
             InitializeComponent();
@@ -131,12 +124,12 @@ namespace QLBH_SOFTWARE
                 if (dr.HasRows)
                 {
                     transno = dr[0].ToString();
-                    count = int.Parse(transno.Substring(8, 4));
+                    count = int.Parse(transno.Substring(0, 4));
                     lbTransaction.Text = sdate + (count + 1);
                 }
                 else
                 {
-                    transno = sdate + "1001";
+                    transno =  "1001";
                     lbTransaction.Text = transno;
                 }
                 dr.Close();
@@ -199,7 +192,7 @@ namespace QLBH_SOFTWARE
                 }
                 dr.Close();
                 cn.Close();
-                lbTotal.Text = total.ToString("#,##0.00");
+                lbTotal.Text = total.ToString("#,##0");
             }
             catch (Exception ex)
             {

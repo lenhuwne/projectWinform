@@ -38,14 +38,14 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cash));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel12 = new Panel();
             panel6 = new Panel();
             panel13 = new Panel();
@@ -60,6 +60,15 @@
             btn_dathang = new Guna.UI2.WinForms.Guna2Button();
             label5 = new Label();
             dgvDonhang = new DataGridView();
+            btn_back = new Guna.UI2.WinForms.Guna2Button();
+            guna2vSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
+            guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            label6 = new Label();
+            label7 = new Label();
+            lbTransaction = new Label();
+            lbTotal = new Label();
+            addProduct = new Guna.UI2.WinForms.Guna2CircleButton();
+            label9 = new Label();
             Column1 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
             Column8 = new DataGridViewTextBoxColumn();
@@ -72,15 +81,6 @@
             increase = new DataGridViewImageColumn();
             decrease = new DataGridViewImageColumn();
             delete = new DataGridViewImageColumn();
-            btn_back = new Guna.UI2.WinForms.Guna2Button();
-            guna2vSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
-            guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            label6 = new Label();
-            label7 = new Label();
-            lbTransaction = new Label();
-            lbTotal = new Label();
-            addProduct = new Guna.UI2.WinForms.Guna2CircleButton();
-            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvDonhang).BeginInit();
             SuspendLayout();
             // 
@@ -89,48 +89,44 @@
             panel12.BackColor = SystemColors.Desktop;
             panel12.Dock = DockStyle.Top;
             panel12.Location = new Point(0, 0);
-            panel12.Margin = new Padding(3, 2, 3, 2);
             panel12.Name = "panel12";
-            panel12.Size = new Size(907, 2);
+            panel12.Size = new Size(1037, 3);
             panel12.TabIndex = 8;
             // 
             // panel6
             // 
             panel6.BackColor = Color.Black;
             panel6.Dock = DockStyle.Right;
-            panel6.Location = new Point(904, 2);
-            panel6.Margin = new Padding(3, 2, 3, 2);
+            panel6.Location = new Point(1034, 3);
             panel6.Name = "panel6";
-            panel6.Size = new Size(3, 342);
+            panel6.Size = new Size(3, 456);
             panel6.TabIndex = 10;
             // 
             // panel13
             // 
             panel13.BackColor = SystemColors.Desktop;
             panel13.Dock = DockStyle.Left;
-            panel13.Location = new Point(0, 2);
-            panel13.Margin = new Padding(3, 2, 3, 2);
+            panel13.Location = new Point(0, 3);
             panel13.Name = "panel13";
-            panel13.Size = new Size(3, 342);
+            panel13.Size = new Size(3, 456);
             panel13.TabIndex = 11;
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.Desktop;
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 342);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(3, 456);
             panel1.Name = "panel1";
-            panel1.Size = new Size(901, 2);
+            panel1.Size = new Size(1031, 3);
             panel1.TabIndex = 12;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(46, 63);
+            label1.Location = new Point(53, 84);
             label1.Name = "label1";
-            label1.Size = new Size(71, 18);
+            label1.Size = new Size(87, 22);
             label1.TabIndex = 13;
             label1.Text = "Họ và tên";
             // 
@@ -138,9 +134,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(46, 135);
+            label2.Location = new Point(53, 180);
             label2.Name = "label2";
-            label2.Size = new Size(94, 18);
+            label2.Size = new Size(115, 22);
             label2.TabIndex = 14;
             label2.Text = "Số điện thoại";
             // 
@@ -148,9 +144,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(46, 214);
+            label3.Location = new Point(53, 285);
             label3.Name = "label3";
-            label3.Size = new Size(45, 18);
+            label3.Size = new Size(54, 22);
             label3.TabIndex = 15;
             label3.Text = "Email";
             // 
@@ -166,14 +162,13 @@
             txt_hoten.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txt_hoten.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_hoten.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_hoten.Location = new Point(46, 89);
-            txt_hoten.Margin = new Padding(3, 2, 3, 2);
+            txt_hoten.Location = new Point(53, 119);
             txt_hoten.Name = "txt_hoten";
             txt_hoten.PasswordChar = '\0';
             txt_hoten.PlaceholderText = "";
             txt_hoten.SelectedText = "";
             txt_hoten.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txt_hoten.Size = new Size(285, 34);
+            txt_hoten.Size = new Size(326, 45);
             txt_hoten.TabIndex = 16;
             // 
             // txt_sdt
@@ -188,14 +183,13 @@
             txt_sdt.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txt_sdt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_sdt.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_sdt.Location = new Point(46, 166);
-            txt_sdt.Margin = new Padding(3, 2, 3, 2);
+            txt_sdt.Location = new Point(53, 221);
             txt_sdt.Name = "txt_sdt";
             txt_sdt.PasswordChar = '\0';
             txt_sdt.PlaceholderText = "";
             txt_sdt.SelectedText = "";
             txt_sdt.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txt_sdt.Size = new Size(285, 34);
+            txt_sdt.Size = new Size(326, 45);
             txt_sdt.TabIndex = 16;
             // 
             // txt_email
@@ -210,23 +204,22 @@
             txt_email.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txt_email.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_email.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_email.Location = new Point(46, 248);
-            txt_email.Margin = new Padding(3, 2, 3, 2);
+            txt_email.Location = new Point(53, 331);
             txt_email.Name = "txt_email";
             txt_email.PasswordChar = '\0';
             txt_email.PlaceholderText = "";
             txt_email.SelectedText = "";
             txt_email.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txt_email.Size = new Size(285, 34);
+            txt_email.Size = new Size(326, 45);
             txt_email.TabIndex = 16;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(46, 7);
+            label4.Location = new Point(53, 9);
             label4.Name = "label4";
-            label4.Size = new Size(176, 20);
+            label4.Size = new Size(211, 25);
             label4.TabIndex = 17;
             label4.Text = "Thông tin thanh toán";
             // 
@@ -240,11 +233,10 @@
             btn_dathang.FillColor = Color.Black;
             btn_dathang.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             btn_dathang.ForeColor = Color.White;
-            btn_dathang.Location = new Point(52, 305);
-            btn_dathang.Margin = new Padding(3, 2, 3, 2);
+            btn_dathang.Location = new Point(59, 407);
             btn_dathang.Name = "btn_dathang";
             btn_dathang.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btn_dathang.Size = new Size(104, 32);
+            btn_dathang.Size = new Size(119, 43);
             btn_dathang.TabIndex = 18;
             btn_dathang.Text = "Đặt hàng ";
             btn_dathang.TextFormatNoPrefix = true;
@@ -254,9 +246,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(357, 70);
+            label5.Location = new Point(408, 93);
             label5.Name = "label5";
-            label5.Size = new Size(149, 18);
+            label5.Size = new Size(179, 22);
             label5.TabIndex = 19;
             label5.Text = "Đơn hàng của bạn ";
             // 
@@ -287,15 +279,111 @@
             dgvDonhang.DefaultCellStyle = dataGridViewCellStyle6;
             dgvDonhang.EnableHeadersVisualStyles = false;
             dgvDonhang.GridColor = SystemColors.ActiveCaptionText;
-            dgvDonhang.Location = new Point(357, 89);
-            dgvDonhang.Margin = new Padding(3, 2, 3, 2);
+            dgvDonhang.Location = new Point(408, 119);
             dgvDonhang.Name = "dgvDonhang";
             dgvDonhang.RowHeadersVisible = false;
             dgvDonhang.RowHeadersWidth = 51;
             dgvDonhang.RowTemplate.Height = 29;
-            dgvDonhang.Size = new Size(540, 193);
+            dgvDonhang.Size = new Size(617, 257);
             dgvDonhang.TabIndex = 20;
             dgvDonhang.CellContentClick += dgvDonhang_CellContentClick;
+            // 
+            // btn_back
+            // 
+            btn_back.CustomizableEdges = customizableEdges9;
+            btn_back.DisabledState.BorderColor = Color.DarkGray;
+            btn_back.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_back.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_back.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_back.FillColor = SystemColors.ButtonHighlight;
+            btn_back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_back.ForeColor = Color.White;
+            btn_back.Image = (Image)resources.GetObject("btn_back.Image");
+            btn_back.ImageSize = new Size(30, 30);
+            btn_back.Location = new Point(3, 3);
+            btn_back.Name = "btn_back";
+            btn_back.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btn_back.Size = new Size(48, 44);
+            btn_back.TabIndex = 21;
+            btn_back.Click += btn_back_Click;
+            // 
+            // guna2vSeparator1
+            // 
+            guna2vSeparator1.Location = new Point(981, 3);
+            guna2vSeparator1.Name = "guna2vSeparator1";
+            guna2vSeparator1.Size = new Size(10, 45);
+            guna2vSeparator1.TabIndex = 50;
+            // 
+            // guna2Separator1
+            // 
+            guna2Separator1.Location = new Point(3, 43);
+            guna2Separator1.Name = "guna2Separator1";
+            guna2Separator1.Size = new Size(1031, 11);
+            guna2Separator1.TabIndex = 51;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(738, 15);
+            label6.Name = "label6";
+            label6.Size = new Size(111, 20);
+            label6.TabIndex = 52;
+            label6.Text = "Transaction No:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(853, 389);
+            label7.Name = "label7";
+            label7.Size = new Size(81, 20);
+            label7.TabIndex = 52;
+            label7.Text = "Total Price:";
+            // 
+            // lbTransaction
+            // 
+            lbTransaction.Location = new Point(853, 15);
+            lbTransaction.Name = "lbTransaction";
+            lbTransaction.Size = new Size(138, 25);
+            lbTransaction.TabIndex = 53;
+            lbTransaction.Text = "000000000000";
+            lbTransaction.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lbTotal
+            // 
+            lbTotal.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbTotal.Location = new Point(930, 389);
+            lbTotal.Name = "lbTotal";
+            lbTotal.Size = new Size(96, 25);
+            lbTotal.TabIndex = 53;
+            lbTotal.Text = "0.00";
+            lbTotal.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // addProduct
+            // 
+            addProduct.DisabledState.BorderColor = Color.DarkGray;
+            addProduct.DisabledState.CustomBorderColor = Color.DarkGray;
+            addProduct.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addProduct.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addProduct.FillColor = SystemColors.ButtonHighlight;
+            addProduct.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            addProduct.ForeColor = Color.White;
+            addProduct.Image = (Image)resources.GetObject("addProduct.Image");
+            addProduct.Location = new Point(897, 84);
+            addProduct.Name = "addProduct";
+            addProduct.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            addProduct.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            addProduct.Size = new Size(37, 33);
+            addProduct.TabIndex = 54;
+            addProduct.Click += addProduct_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(930, 91);
+            label9.Name = "label9";
+            label9.Size = new Size(60, 20);
+            label9.TabIndex = 55;
+            label9.Text = "Product";
             // 
             // Column1
             // 
@@ -303,7 +391,7 @@
             Column1.HeaderText = "No";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 46;
+            Column1.Width = 56;
             // 
             // Column7
             // 
@@ -311,7 +399,8 @@
             Column7.HeaderText = "CashId";
             Column7.MinimumWidth = 6;
             Column7.Name = "Column7";
-            Column7.Width = 66;
+            Column7.Visible = false;
+            Column7.Width = 80;
             // 
             // Column8
             // 
@@ -329,7 +418,8 @@
             Column6.HeaderText = "ID";
             Column6.MinimumWidth = 6;
             Column6.Name = "Column6";
-            Column6.Width = 41;
+            Column6.Visible = false;
+            Column6.Width = 51;
             // 
             // Column2
             // 
@@ -346,7 +436,7 @@
             Column3.HeaderText = "Quantity";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
-            Column3.Width = 76;
+            Column3.Width = 92;
             // 
             // Column4
             // 
@@ -356,7 +446,7 @@
             Column4.HeaderText = "Price";
             Column4.MinimumWidth = 6;
             Column4.Name = "Column4";
-            Column4.Width = 56;
+            Column4.Width = 68;
             // 
             // Column5
             // 
@@ -366,7 +456,7 @@
             Column5.HeaderText = "Total";
             Column5.MinimumWidth = 6;
             Column5.Name = "Column5";
-            Column5.Width = 55;
+            Column5.Width = 69;
             // 
             // Column9
             // 
@@ -403,113 +493,12 @@
             delete.Name = "delete";
             delete.Width = 6;
             // 
-            // btn_back
-            // 
-            btn_back.CustomizableEdges = customizableEdges9;
-            btn_back.DisabledState.BorderColor = Color.DarkGray;
-            btn_back.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_back.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_back.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_back.FillColor = SystemColors.ButtonHighlight;
-            btn_back.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_back.ForeColor = Color.White;
-            btn_back.Image = (Image)resources.GetObject("btn_back.Image");
-            btn_back.ImageSize = new Size(30, 30);
-            btn_back.Location = new Point(3, 2);
-            btn_back.Margin = new Padding(3, 2, 3, 2);
-            btn_back.Name = "btn_back";
-            btn_back.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btn_back.Size = new Size(42, 33);
-            btn_back.TabIndex = 21;
-            btn_back.Click += btn_back_Click;
-            // 
-            // guna2vSeparator1
-            // 
-            guna2vSeparator1.Location = new Point(858, 2);
-            guna2vSeparator1.Margin = new Padding(3, 2, 3, 2);
-            guna2vSeparator1.Name = "guna2vSeparator1";
-            guna2vSeparator1.Size = new Size(9, 34);
-            guna2vSeparator1.TabIndex = 50;
-            // 
-            // guna2Separator1
-            // 
-            guna2Separator1.Location = new Point(3, 32);
-            guna2Separator1.Margin = new Padding(3, 2, 3, 2);
-            guna2Separator1.Name = "guna2Separator1";
-            guna2Separator1.Size = new Size(902, 8);
-            guna2Separator1.TabIndex = 51;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(646, 11);
-            label6.Name = "label6";
-            label6.Size = new Size(89, 15);
-            label6.TabIndex = 52;
-            label6.Text = "Transaction No:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(746, 292);
-            label7.Name = "label7";
-            label7.Size = new Size(64, 15);
-            label7.TabIndex = 52;
-            label7.Text = "Total Price:";
-            // 
-            // lbTransaction
-            // 
-            lbTransaction.Location = new Point(746, 11);
-            lbTransaction.Name = "lbTransaction";
-            lbTransaction.Size = new Size(121, 19);
-            lbTransaction.TabIndex = 53;
-            lbTransaction.Text = "000000000000";
-            lbTransaction.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lbTotal
-            // 
-            lbTotal.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lbTotal.Location = new Point(814, 292);
-            lbTotal.Name = "lbTotal";
-            lbTotal.Size = new Size(84, 19);
-            lbTotal.TabIndex = 53;
-            lbTotal.Text = "0.00";
-            lbTotal.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // addProduct
-            // 
-            addProduct.DisabledState.BorderColor = Color.DarkGray;
-            addProduct.DisabledState.CustomBorderColor = Color.DarkGray;
-            addProduct.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            addProduct.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            addProduct.FillColor = SystemColors.ButtonHighlight;
-            addProduct.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            addProduct.ForeColor = Color.White;
-            addProduct.Image = (Image)resources.GetObject("addProduct.Image");
-            addProduct.Location = new Point(785, 63);
-            addProduct.Margin = new Padding(3, 2, 3, 2);
-            addProduct.Name = "addProduct";
-            addProduct.ShadowDecoration.CustomizableEdges = customizableEdges11;
-            addProduct.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            addProduct.Size = new Size(32, 25);
-            addProduct.TabIndex = 54;
-            addProduct.Click += addProduct_Click;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(814, 68);
-            label9.Name = "label9";
-            label9.Size = new Size(49, 15);
-            label9.TabIndex = 55;
-            label9.Text = "Product";
-            // 
             // Cash
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(907, 344);
+            ClientSize = new Size(1037, 459);
             Controls.Add(label9);
             Controls.Add(addProduct);
             Controls.Add(lbTotal);
@@ -534,7 +523,6 @@
             Controls.Add(panel6);
             Controls.Add(panel12);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Cash";
             StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)dgvDonhang).EndInit();
@@ -563,6 +551,10 @@
         private Guna.UI2.WinForms.Guna2CircleButton addProduct;
         private Label label9;
         public Label lbTransaction;
+        private DataGridView dgvDonhang;
+        public Guna.UI2.WinForms.Guna2TextBox txt_hoten;
+        public Guna.UI2.WinForms.Guna2TextBox txt_sdt;
+        public Guna.UI2.WinForms.Guna2TextBox txt_email;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewTextBoxColumn Column8;
@@ -575,9 +567,5 @@
         private DataGridViewImageColumn increase;
         private DataGridViewImageColumn decrease;
         private DataGridViewImageColumn delete;
-        private DataGridView dgvDonhang;
-        public Guna.UI2.WinForms.Guna2TextBox txt_hoten;
-        public Guna.UI2.WinForms.Guna2TextBox txt_sdt;
-        public Guna.UI2.WinForms.Guna2TextBox txt_email;
     }
 }

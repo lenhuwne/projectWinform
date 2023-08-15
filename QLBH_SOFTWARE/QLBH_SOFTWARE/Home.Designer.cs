@@ -73,11 +73,12 @@
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             btn_cash = new Guna.UI2.WinForms.Guna2Button();
             panel4 = new Panel();
-            txtId = new Label();
             lbl_username = new Label();
             guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             btn_logout = new Guna.UI2.WinForms.Guna2Button();
+            txtId = new Label();
             btn_all = new Guna.UI2.WinForms.Guna2Button();
+            txtname = new Label();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
@@ -95,11 +96,10 @@
             btn_Game.FillColor = SystemColors.ButtonHighlight;
             btn_Game.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Italic, GraphicsUnit.Point);
             btn_Game.ForeColor = Color.Black;
-            btn_Game.Location = new Point(8, 185);
-            btn_Game.Margin = new Padding(3, 2, 3, 2);
+            btn_Game.Location = new Point(9, 247);
             btn_Game.Name = "btn_Game";
             btn_Game.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btn_Game.Size = new Size(162, 28);
+            btn_Game.Size = new Size(185, 37);
             btn_Game.TabIndex = 3;
             btn_Game.Text = "Trò chơi";
             btn_Game.Click += btn_Game_Click;
@@ -114,11 +114,10 @@
             btn_App.FillColor = SystemColors.ButtonHighlight;
             btn_App.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Italic, GraphicsUnit.Point);
             btn_App.ForeColor = Color.Black;
-            btn_App.Location = new Point(8, 226);
-            btn_App.Margin = new Padding(3, 2, 3, 2);
+            btn_App.Location = new Point(9, 301);
             btn_App.Name = "btn_App";
             btn_App.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btn_App.Size = new Size(162, 26);
+            btn_App.Size = new Size(185, 35);
             btn_App.TabIndex = 3;
             btn_App.Text = "Ứng dụng";
             btn_App.Click += btn_App_Click;
@@ -127,10 +126,9 @@
             // 
             panel9.BackColor = SystemColors.Desktop;
             panel9.Dock = DockStyle.Bottom;
-            panel9.Location = new Point(0, 508);
-            panel9.Margin = new Padding(3, 2, 3, 2);
+            panel9.Location = new Point(0, 677);
             panel9.Name = "panel9";
-            panel9.Size = new Size(1104, 2);
+            panel9.Size = new Size(1262, 3);
             panel9.TabIndex = 1;
             // 
             // guna2Button1
@@ -145,11 +143,10 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
             guna2Button1.ImageSize = new Size(25, 25);
-            guna2Button1.Location = new Point(1059, 0);
-            guna2Button1.Margin = new Padding(3, 2, 3, 2);
+            guna2Button1.Location = new Point(1210, 0);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button1.Size = new Size(46, 37);
+            guna2Button1.Size = new Size(53, 49);
             guna2Button1.TabIndex = 3;
             guna2Button1.Click += guna2Button1_Click;
             // 
@@ -157,10 +154,9 @@
             // 
             panel10.BackColor = SystemColors.Desktop;
             panel10.Dock = DockStyle.Right;
-            panel10.Location = new Point(1101, 0);
-            panel10.Margin = new Padding(3, 2, 3, 2);
+            panel10.Location = new Point(1259, 0);
             panel10.Name = "panel10";
-            panel10.Size = new Size(3, 508);
+            panel10.Size = new Size(3, 677);
             panel10.TabIndex = 4;
             // 
             // panel1
@@ -168,9 +164,8 @@
             panel1.BackColor = SystemColors.Desktop;
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1101, 2);
+            panel1.Size = new Size(1259, 3);
             panel1.TabIndex = 5;
             // 
             // panel7
@@ -179,6 +174,7 @@
             panel7.Controls.Add(guna2vSeparator2);
             panel7.Controls.Add(guna2Separator1);
             panel7.Controls.Add(label8);
+            panel7.Controls.Add(txtId);
             panel7.Controls.Add(label7);
             panel7.Controls.Add(label6);
             panel7.Controls.Add(pictureBox1);
@@ -204,35 +200,32 @@
             panel7.Dock = DockStyle.Top;
             panel7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             panel7.Location = new Point(0, 0);
-            panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(1104, 510);
+            panel7.Size = new Size(1262, 680);
             panel7.TabIndex = 10;
             panel7.Paint += panel7_Paint;
             // 
             // guna2vSeparator2
             // 
-            guna2vSeparator2.Location = new Point(1056, 3);
-            guna2vSeparator2.Margin = new Padding(3, 2, 3, 2);
+            guna2vSeparator2.Location = new Point(1207, 4);
             guna2vSeparator2.Name = "guna2vSeparator2";
-            guna2vSeparator2.Size = new Size(9, 34);
+            guna2vSeparator2.Size = new Size(10, 45);
             guna2vSeparator2.TabIndex = 33;
             // 
             // guna2Separator1
             // 
-            guna2Separator1.Location = new Point(180, 33);
-            guna2Separator1.Margin = new Padding(3, 2, 3, 2);
+            guna2Separator1.Location = new Point(206, 44);
             guna2Separator1.Name = "guna2Separator1";
-            guna2Separator1.Size = new Size(921, 8);
+            guna2Separator1.Size = new Size(1053, 11);
             guna2Separator1.TabIndex = 34;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(636, 469);
+            label8.Location = new Point(727, 625);
             label8.Name = "label8";
-            label8.Size = new Size(184, 17);
+            label8.Size = new Size(217, 20);
             label8.TabIndex = 32;
             label8.Text = "Software and Media Agency";
             // 
@@ -241,9 +234,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Italic, GraphicsUnit.Point);
             label7.ForeColor = Color.DimGray;
-            label7.Location = new Point(636, 446);
+            label7.Location = new Point(727, 595);
             label7.Name = "label7";
-            label7.Size = new Size(83, 17);
+            label7.Size = new Size(97, 20);
             label7.TabIndex = 31;
             label7.Text = "Since: 2022";
             // 
@@ -251,19 +244,18 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(628, 406);
+            label6.Location = new Point(718, 541);
             label6.Name = "label6";
-            label6.Size = new Size(249, 31);
+            label6.Size = new Size(312, 39);
             label6.TabIndex = 30;
             label6.Text = "Centrix Corporation";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(263, 270);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(301, 360);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(350, 225);
+            pictureBox1.Size = new Size(400, 300);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 29;
             pictureBox1.TabStop = false;
@@ -272,9 +264,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Italic, GraphicsUnit.Point);
-            label5.Location = new Point(517, 232);
+            label5.Location = new Point(591, 309);
             label5.Name = "label5";
-            label5.Size = new Size(71, 18);
+            label5.Size = new Size(82, 22);
             label5.TabIndex = 28;
             label5.Text = "Microsoft";
             // 
@@ -282,9 +274,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(486, 234);
+            label4.Location = new Point(555, 312);
             label4.Name = "label4";
-            label4.Size = new Size(31, 19);
+            label4.Size = new Size(38, 23);
             label4.TabIndex = 27;
             label4.Text = "Bởi:";
             // 
@@ -292,9 +284,9 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.DimGray;
-            label3.Location = new Point(389, 219);
+            label3.Location = new Point(445, 292);
             label3.Name = "label3";
-            label3.Size = new Size(87, 15);
+            label3.Size = new Size(108, 20);
             label3.TabIndex = 26;
             label3.Text = "Phiên bản: 17.6";
             // 
@@ -302,9 +294,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(381, 178);
+            label2.Location = new Point(435, 237);
             label2.Name = "label2";
-            label2.Size = new Size(229, 31);
+            label2.Size = new Size(288, 39);
             label2.TabIndex = 25;
             label2.Text = "VISUAL STUDIO ";
             // 
@@ -314,9 +306,9 @@
             label1.BackColor = SystemColors.ButtonHighlight;
             label1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Desktop;
-            label1.Location = new Point(389, 153);
+            label1.Location = new Point(445, 204);
             label1.Name = "label1";
-            label1.Size = new Size(171, 18);
+            label1.Size = new Size(209, 22);
             label1.TabIndex = 24;
             label1.Text = "Giao diện đang kích hoạt";
             // 
@@ -325,11 +317,10 @@
             guna2PictureBox1.CustomizableEdges = customizableEdges7;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(619, 41);
-            guna2PictureBox1.Margin = new Padding(3, 2, 3, 2);
+            guna2PictureBox1.Location = new Point(707, 55);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2PictureBox1.Size = new Size(355, 222);
+            guna2PictureBox1.Size = new Size(406, 296);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             guna2PictureBox1.TabIndex = 23;
             guna2PictureBox1.TabStop = false;
@@ -337,10 +328,9 @@
             // guna2vSeparator1
             // 
             guna2vSeparator1.FillColor = Color.Black;
-            guna2vSeparator1.Location = new Point(175, 2);
-            guna2vSeparator1.Margin = new Padding(3, 2, 3, 2);
+            guna2vSeparator1.Location = new Point(200, 3);
             guna2vSeparator1.Name = "guna2vSeparator1";
-            guna2vSeparator1.Size = new Size(9, 506);
+            guna2vSeparator1.Size = new Size(10, 675);
             guna2vSeparator1.TabIndex = 22;
             // 
             // btn_order
@@ -353,11 +343,10 @@
             btn_order.FillColor = SystemColors.ButtonHighlight;
             btn_order.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btn_order.ForeColor = Color.Black;
-            btn_order.Location = new Point(8, 320);
-            btn_order.Margin = new Padding(3, 2, 3, 2);
+            btn_order.Location = new Point(9, 427);
             btn_order.Name = "btn_order";
             btn_order.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btn_order.Size = new Size(162, 33);
+            btn_order.Size = new Size(185, 44);
             btn_order.TabIndex = 21;
             btn_order.Text = "Hóa đơn";
             btn_order.Click += guna2Button2_Click_1;
@@ -366,10 +355,9 @@
             // 
             panel2.BackColor = SystemColors.Desktop;
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 2);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(0, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(3, 506);
+            panel2.Size = new Size(3, 674);
             panel2.TabIndex = 20;
             // 
             // guna2Button3
@@ -382,11 +370,10 @@
             guna2Button3.FillColor = SystemColors.ButtonHighlight;
             guna2Button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             guna2Button3.ForeColor = Color.Black;
-            guna2Button3.Location = new Point(8, 270);
-            guna2Button3.Margin = new Padding(3, 2, 3, 2);
+            guna2Button3.Location = new Point(9, 360);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button3.Size = new Size(162, 33);
+            guna2Button3.Size = new Size(185, 44);
             guna2Button3.TabIndex = 19;
             guna2Button3.Text = "Khách hàng ";
             // 
@@ -400,58 +387,44 @@
             btn_cash.FillColor = SystemColors.ButtonHighlight;
             btn_cash.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btn_cash.ForeColor = Color.Black;
-            btn_cash.Location = new Point(8, 365);
-            btn_cash.Margin = new Padding(3, 2, 3, 2);
+            btn_cash.Location = new Point(9, 487);
             btn_cash.Name = "btn_cash";
             btn_cash.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btn_cash.Size = new Size(162, 33);
+            btn_cash.Size = new Size(185, 44);
             btn_cash.TabIndex = 19;
             btn_cash.Text = "Cash";
             btn_cash.Click += btn_cash_Click;
             // 
             // panel4
             // 
-            panel4.Controls.Add(txtId);
+            panel4.Controls.Add(txtname);
             panel4.Controls.Add(lbl_username);
             panel4.Controls.Add(guna2CirclePictureBox1);
             panel4.Controls.Add(btn_logout);
-            panel4.Location = new Point(18, 7);
-            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Location = new Point(21, 9);
             panel4.Name = "panel4";
-            panel4.Size = new Size(142, 117);
+            panel4.Size = new Size(162, 156);
             panel4.TabIndex = 3;
-            // 
-            // txtId
-            // 
-            txtId.AutoSize = true;
-            txtId.Enabled = false;
-            txtId.Location = new Point(45, 86);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(38, 15);
-            txtId.TabIndex = 5;
-            txtId.Text = "label9";
             // 
             // lbl_username
             // 
             lbl_username.AutoSize = true;
             lbl_username.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_username.Location = new Point(30, 70);
+            lbl_username.Location = new Point(34, 93);
             lbl_username.Name = "lbl_username";
-            lbl_username.Size = new Size(73, 17);
+            lbl_username.Size = new Size(0, 20);
             lbl_username.TabIndex = 1;
-            lbl_username.Text = "Username";
             lbl_username.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // guna2CirclePictureBox1
             // 
             guna2CirclePictureBox1.Image = (Image)resources.GetObject("guna2CirclePictureBox1.Image");
             guna2CirclePictureBox1.ImageRotate = 0F;
-            guna2CirclePictureBox1.Location = new Point(30, 2);
-            guna2CirclePictureBox1.Margin = new Padding(3, 2, 3, 2);
+            guna2CirclePictureBox1.Location = new Point(34, 3);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges15;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CirclePictureBox1.Size = new Size(78, 68);
+            guna2CirclePictureBox1.Size = new Size(89, 91);
             guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             guna2CirclePictureBox1.TabIndex = 0;
             guna2CirclePictureBox1.TabStop = false;
@@ -466,14 +439,23 @@
             btn_logout.FillColor = SystemColors.ButtonHighlight;
             btn_logout.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btn_logout.ForeColor = Color.DimGray;
-            btn_logout.Location = new Point(3, 91);
-            btn_logout.Margin = new Padding(3, 2, 3, 2);
+            btn_logout.Location = new Point(3, 121);
             btn_logout.Name = "btn_logout";
             btn_logout.ShadowDecoration.CustomizableEdges = customizableEdges17;
-            btn_logout.Size = new Size(136, 24);
+            btn_logout.Size = new Size(155, 32);
             btn_logout.TabIndex = 4;
             btn_logout.Text = "Log out";
             btn_logout.Click += btn_logout_Click;
+            // 
+            // txtId
+            // 
+            txtId.AutoSize = true;
+            txtId.Enabled = false;
+            txtId.Location = new Point(278, 13);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(50, 20);
+            txtId.TabIndex = 5;
+            txtId.Text = "label9";
             // 
             // btn_all
             // 
@@ -487,24 +469,32 @@
             btn_all.FillColor = SystemColors.ButtonHighlight;
             btn_all.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btn_all.ForeColor = Color.Black;
-            btn_all.Location = new Point(8, 148);
-            btn_all.Margin = new Padding(3, 2, 3, 2);
+            btn_all.Location = new Point(9, 197);
             btn_all.Name = "btn_all";
             btn_all.PressedColor = SystemColors.ButtonHighlight;
             btn_all.ShadowDecoration.CustomizableEdges = customizableEdges19;
-            btn_all.Size = new Size(162, 33);
+            btn_all.Size = new Size(185, 44);
             btn_all.TabIndex = 3;
             btn_all.Text = "Sản phẩm";
             btn_all.Click += btn_all_Click;
             // 
+            // txtname
+            // 
+            txtname.AutoSize = true;
+            txtname.Enabled = false;
+            txtname.Location = new Point(57, 109);
+            txtname.Name = "txtname";
+            txtname.Size = new Size(50, 20);
+            txtname.TabIndex = 35;
+            txtname.Text = "label9";
+            // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1104, 510);
+            ClientSize = new Size(1262, 680);
             Controls.Add(panel7);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
@@ -534,7 +524,6 @@
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btn_logout;
         private Panel panel4;
-        private Label lbl_username;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button btn_all;
         private Guna.UI2.WinForms.Guna2Button btn_order;
@@ -552,5 +541,7 @@
         private Guna.UI2.WinForms.Guna2VSeparator guna2vSeparator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         public Label txtId;
+        public Label lbl_username;
+        public Label txtname;
     }
 }

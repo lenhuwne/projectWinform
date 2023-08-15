@@ -48,14 +48,16 @@ namespace QLBH_SOFTWARE
                         MessageBox.Show("welcom" + _id + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Home home = new Home();
                         home.txtId.Text = _id;
+                        home.txtname.Text = _name;
                         this.Hide();
                         home.ShowDialog();
                     }
-                    else if(_isAdmin == "user")
+                    else 
                     {
                         MessageBox.Show("welcom" + _id + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Home_Cus homecus = new Home_Cus();
                         homecus.txtid.Text = _id;
+                        homecus.txtName.Text = _name;
                         homecus.ShowDialog();
                         this.Hide();
                     }

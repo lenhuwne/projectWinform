@@ -62,8 +62,6 @@
             Column8 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
-            Column9 = new DataGridViewTextBoxColumn();
-            done = new DataGridViewImageColumn();
             view = new DataGridViewImageColumn();
             txttrans = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvDonhang).BeginInit();
@@ -74,39 +72,35 @@
             panel1.BackColor = SystemColors.Desktop;
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(908, 2);
+            panel1.Size = new Size(1038, 3);
             panel1.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.BackColor = SystemColors.Desktop;
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(905, 2);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(1035, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(3, 392);
+            panel2.Size = new Size(3, 522);
             panel2.TabIndex = 1;
             // 
             // panel3
             // 
             panel3.BackColor = SystemColors.Desktop;
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, 392);
-            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Location = new Point(0, 522);
             panel3.Name = "panel3";
-            panel3.Size = new Size(905, 2);
+            panel3.Size = new Size(1035, 3);
             panel3.TabIndex = 2;
             // 
             // panel4
             // 
             panel4.BackColor = SystemColors.Desktop;
             panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(0, 2);
-            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Location = new Point(0, 3);
             panel4.Name = "panel4";
-            panel4.Size = new Size(3, 390);
+            panel4.Size = new Size(3, 519);
             panel4.TabIndex = 3;
             // 
             // btn_exit
@@ -121,11 +115,10 @@
             btn_exit.ForeColor = Color.White;
             btn_exit.Image = (Image)resources.GetObject("btn_exit.Image");
             btn_exit.ImageSize = new Size(25, 25);
-            btn_exit.Location = new Point(880, 2);
-            btn_exit.Margin = new Padding(3, 2, 3, 2);
+            btn_exit.Location = new Point(1006, 3);
             btn_exit.Name = "btn_exit";
             btn_exit.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btn_exit.Size = new Size(25, 28);
+            btn_exit.Size = new Size(29, 37);
             btn_exit.TabIndex = 4;
             btn_exit.Click += btn_exit_Click;
             // 
@@ -133,9 +126,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(54, 7);
+            label1.Location = new Point(62, 9);
             label1.Name = "label1";
-            label1.Size = new Size(107, 24);
+            label1.Size = new Size(131, 29);
             label1.TabIndex = 5;
             label1.Text = "Đơn hàng ";
             // 
@@ -151,11 +144,10 @@
             btn_back.ForeColor = Color.White;
             btn_back.Image = (Image)resources.GetObject("btn_back.Image");
             btn_back.ImageSize = new Size(25, 25);
-            btn_back.Location = new Point(8, 3);
-            btn_back.Margin = new Padding(3, 2, 3, 2);
+            btn_back.Location = new Point(9, 4);
             btn_back.Name = "btn_back";
             btn_back.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btn_back.Size = new Size(41, 37);
+            btn_back.Size = new Size(47, 49);
             btn_back.TabIndex = 48;
             // 
             // txt_search
@@ -176,14 +168,13 @@
             txt_search.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_search.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txt_search.IconLeftSize = new Size(38, 30);
-            txt_search.Location = new Point(3, 44);
-            txt_search.Margin = new Padding(3, 2, 3, 2);
+            txt_search.Location = new Point(3, 59);
             txt_search.Name = "txt_search";
             txt_search.PasswordChar = '\0';
             txt_search.PlaceholderText = "Tìm kiếm đơn hàng ";
             txt_search.SelectedText = "";
             txt_search.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txt_search.Size = new Size(206, 34);
+            txt_search.Size = new Size(235, 45);
             txt_search.TabIndex = 57;
             txt_search.TextChanged += txt_search_TextChanged;
             // 
@@ -199,20 +190,18 @@
             btn_reload.ForeColor = Color.White;
             btn_reload.Image = (Image)resources.GetObject("btn_reload.Image");
             btn_reload.ImageSize = new Size(30, 30);
-            btn_reload.Location = new Point(215, 44);
-            btn_reload.Margin = new Padding(3, 2, 3, 2);
+            btn_reload.Location = new Point(246, 59);
             btn_reload.Name = "btn_reload";
             btn_reload.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btn_reload.Size = new Size(39, 34);
+            btn_reload.Size = new Size(45, 45);
             btn_reload.TabIndex = 59;
             btn_reload.Click += guna2Button1_Click;
             // 
             // guna2Separator1
             // 
-            guna2Separator1.Location = new Point(3, 34);
-            guna2Separator1.Margin = new Padding(3, 2, 3, 2);
+            guna2Separator1.Location = new Point(3, 45);
             guna2Separator1.Name = "guna2Separator1";
-            guna2Separator1.Size = new Size(901, 10);
+            guna2Separator1.Size = new Size(1030, 13);
             guna2Separator1.TabIndex = 60;
             // 
             // btn_xoa
@@ -227,11 +216,10 @@
             btn_xoa.ForeColor = Color.White;
             btn_xoa.Image = (Image)resources.GetObject("btn_xoa.Image");
             btn_xoa.ImageSize = new Size(30, 30);
-            btn_xoa.Location = new Point(260, 44);
-            btn_xoa.Margin = new Padding(3, 2, 3, 2);
+            btn_xoa.Location = new Point(297, 59);
             btn_xoa.Name = "btn_xoa";
             btn_xoa.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btn_xoa.Size = new Size(39, 34);
+            btn_xoa.Size = new Size(45, 45);
             btn_xoa.TabIndex = 62;
             // 
             // dgvDonhang
@@ -250,7 +238,7 @@
             dgvDonhang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvDonhang.ColumnHeadersHeight = 30;
             dgvDonhang.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dgvDonhang.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column4, Column7, Column8, Column6, Column3, Column9, done, view });
+            dgvDonhang.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column4, Column7, Column8, Column6, Column3, view });
             dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = SystemColors.ControlLightLight;
             dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -261,13 +249,12 @@
             dgvDonhang.DefaultCellStyle = dataGridViewCellStyle4;
             dgvDonhang.EnableHeadersVisualStyles = false;
             dgvDonhang.GridColor = SystemColors.ActiveCaptionText;
-            dgvDonhang.Location = new Point(3, 84);
-            dgvDonhang.Margin = new Padding(3, 2, 3, 2);
+            dgvDonhang.Location = new Point(3, 112);
             dgvDonhang.Name = "dgvDonhang";
             dgvDonhang.RowHeadersVisible = false;
             dgvDonhang.RowHeadersWidth = 51;
             dgvDonhang.RowTemplate.Height = 29;
-            dgvDonhang.Size = new Size(902, 310);
+            dgvDonhang.Size = new Size(1031, 413);
             dgvDonhang.TabIndex = 74;
             dgvDonhang.CellContentClick += dgvDonhang_CellContentClick;
             // 
@@ -277,7 +264,7 @@
             Column1.HeaderText = "No";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
-            Column1.Width = 46;
+            Column1.Width = 56;
             // 
             // Column2
             // 
@@ -285,12 +272,14 @@
             Column2.HeaderText = "transno";
             Column2.MinimumWidth = 6;
             Column2.Name = "Column2";
-            Column2.Width = 70;
+            Column2.Width = 85;
             // 
             // Column4
             // 
             Column4.HeaderText = "Customer ID";
+            Column4.MinimumWidth = 6;
             Column4.Name = "Column4";
+            Column4.Width = 125;
             // 
             // Column7
             // 
@@ -323,47 +312,32 @@
             Column3.HeaderText = "total";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
-            Column3.Width = 54;
-            // 
-            // Column9
-            // 
-            Column9.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Column9.HeaderText = "status";
-            Column9.MinimumWidth = 6;
-            Column9.Name = "Column9";
-            Column9.Width = 61;
-            // 
-            // done
-            // 
-            done.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            done.HeaderText = "";
-            done.Image = (Image)resources.GetObject("done.Image");
-            done.MinimumWidth = 6;
-            done.Name = "done";
-            done.Width = 6;
+            Column3.Width = 67;
             // 
             // view
             // 
             view.HeaderText = "";
             view.Image = (Image)resources.GetObject("view.Image");
+            view.MinimumWidth = 6;
             view.Name = "view";
+            view.Width = 125;
             // 
             // txttrans
             // 
             txttrans.AutoSize = true;
-            txttrans.Location = new Point(480, 44);
+            txttrans.Location = new Point(549, 59);
             txttrans.Name = "txttrans";
-            txttrans.Size = new Size(38, 15);
+            txttrans.Size = new Size(50, 20);
             txttrans.TabIndex = 75;
             txttrans.Text = "label2";
             // 
             // Order
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(908, 394);
+            ClientSize = new Size(1038, 525);
             Controls.Add(txttrans);
             Controls.Add(dgvDonhang);
             Controls.Add(btn_xoa);
@@ -379,7 +353,6 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Order";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Order";
@@ -410,9 +383,7 @@
         private DataGridViewTextBoxColumn Column8;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column9;
-        private DataGridViewImageColumn done;
         private DataGridViewImageColumn view;
-        private Label txttrans;
+        public Label txttrans;
     }
 }

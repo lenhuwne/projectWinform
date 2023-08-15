@@ -20,21 +20,22 @@ namespace QLBH_SOFTWARE
         DBContext dbcon = new DBContext();
         Home home;
         SqlDataReader dr;
-        public string transno = "";
+        
 
 
-        public Order(Home form)
+        public Order()
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.connection());
+            string transno;
             foreach (DataGridViewRow dr in dgvDonhang.Rows)
             {
                 transno = dr.Cells[1].Value.ToString();
 
             }
+            
             loadOrder();
             //loadCash();
-            home = form;
 
         }
 
@@ -116,109 +117,36 @@ namespace QLBH_SOFTWARE
             while (dr.Read())
             {
 
-                dgvDonhang.Rows.Add(dr[0].ToString(), dr[7].ToString(), dr[5].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[6].ToString(), dr[8].ToString());
+                dgvDonhang.Rows.Add(dr[0].ToString(), dr[7].ToString(), dr[5].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[6].ToString());
             }
             cn.Close();
             dr.Close();
         }
-        //public void loadCash()
-        //{
-        //    int i = 0;
-        //    cn.Open();
-        //    cmd = new SqlCommand("SELECT * FROM CASH where transno like '" + transno + "'", cn);
-        //    dr = cmd.ExecuteReader();
-        //    while (dr.Read())
-        //    {
-        //        i++;
-        //        dgvcash.Rows.Add(i, dr[0].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
-        //    }
-        //    dr.Close();
-        //    cn.Close();
-        //}
-        //public void insertOrder()
-        //{
-        //    try
-        //    {
+        
 
-        //    cmd = new SqlCommand("insert into ORDERDONE(transno,idAdmin) values (@transno,@isAdmin)", cn);
-        //    cmd.Parameters.AddWithValue("@transno", transno);
-        //    cmd.Parameters.AddWithValue("@isAdmin", home.txtId.Text);
-        //    cn.Open();
-        //    cmd.ExecuteNonQuery();
-        //    cn.Close();
-        //    }catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-        //public void updateOrder()
-        //{
-        //    try
-        //    {
-
-        //    cmd = new SqlCommand("update ORDERDETAIL SET statusOrder = " + 1 + " where transno like '" + dgvDonhang.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", cn);
-        //    cn.Open();
-        //    cmd.ExecuteNonQuery();
-        //    cn.Close();
-        //    }catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
         #endregion MEthod
 
 
         private void dgvDonhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
 
             string colname = dgvDonhang.Columns[e.ColumnIndex].Name;
-           
 
-            if (colname == "done")
+            if (colname == "view")
             {
-                try
-                {
-
-                    cmd = new SqlCommand("insert into ORDERDONE(transno,idAdmin) values (@transno,@isAdmin)", cn);
-                    cmd.Parameters.AddWithValue("@transno", transno);
-                    cmd.Parameters.AddWithValue("@isAdmin", home.txtId.Text);
-                    cn.Open();
-                    cmd.ExecuteNonQuery();
-                    cn.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                try
-                {
-
-                    cmd = new SqlCommand("update ORDERDETAIL SET statusOrder = " + 1 + " where transno like '" + dgvDonhang.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", cn);
-                    cn.Open();
-                    cmd.ExecuteNonQuery();
-                    cn.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
 
 
-
+                OrderDetail detail = new OrderDetail(this);
+                detail.lbl_ten.Text = dgvDonhang.Rows[e.RowIndex].Cells[3].Value.ToString();
+                detail.lbl_email.Text = dgvDonhang.Rows[e.RowIndex].Cells[5].Value.ToString();
+                detail.lbl_sdt.Text = dgvDonhang.Rows[e.RowIndex].Cells[4].Value.ToString();
+                detail.txtTransno.Text = dgvDonhang.Rows[e.RowIndex].Cells[1].Value.ToString();
+                detail.loadCash();
+                detail.Show();
+                
+                
             }
-            //else if (colname == "view")
-            //{
-
-
-            //    OrderDetail detail = new OrderDetail(this);
-            //    detail.lbl_ten.Text = dgvDonhang.Rows[e.RowIndex].Cells[3].Value.ToString();
-            //    detail.lbl_email.Text = dgvDonhang.Rows[e.RowIndex].Cells[5].Value.ToString();
-            //    detail.lbl_sdt.Text = dgvDonhang.Rows[e.RowIndex].Cells[4].Value.ToString();
-            //    detail.txtid.Text = dgvcash.Rows[e.RowIndex].Cells[5].Value.ToString();
-            //    detail.Show();
-            //}
-            loadOrder();
         }
     }
 }

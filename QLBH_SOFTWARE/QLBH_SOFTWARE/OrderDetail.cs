@@ -18,7 +18,7 @@ namespace QLBH_SOFTWARE
         DBContext dbcon = new DBContext();
         SqlDataReader dr;
         Order order;
-        string transno = "";
+
 
         public OrderDetail(Order form)
         {
@@ -39,20 +39,21 @@ namespace QLBH_SOFTWARE
 
         }
         #region Method
-        //public void loadCash()
-        //{
-        //    order.transno = transno;
-        //    cn.Open();
-        //    cmd = new SqlCommand("SELECT * FROM CASH INNER JOIN ORDERDETAIL ON CASH.transno = ORDERDETAIL.transno where CASH.transno like '" + transno + "'", cn);
-        //    dr = cmd.ExecuteReader();
-        //    while (dr.Read())
-        //    {
-
-        //        dgvDonhang.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[4].ToString(), dr[3].ToString(), dr[2].ToString());
-        //    }
-        //    dr.Close();
-        //    cn.Close();
-        //}
+        public void loadCash()
+        {
+            int i = 0;
+            dgvCash.Rows.Clear();
+            cmd = new SqlCommand("SELECT * FROM CASH where transno like '" + txtTransno.Text + "'", cn);
+            cn.Open();
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                dgvCash.Rows.Add(i, dr[0].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
+            }
+            dr.Close();
+            cn.Close();
+        }
         #endregion Method
     }
 }

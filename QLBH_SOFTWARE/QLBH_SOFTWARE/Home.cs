@@ -92,7 +92,7 @@ namespace QLBH_SOFTWARE
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
-            Order order = new Order(this);
+            Order order = new Order();
             order.Show();
         }
         #region Method

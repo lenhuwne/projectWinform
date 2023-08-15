@@ -21,7 +21,7 @@ namespace QLBH_SOFTWARE
             InitializeComponent();
             cn = new SqlConnection(dbcon.connection());
             openChildForm(new ChildFormHome());
-        } 
+        }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Login lg = new Login();
