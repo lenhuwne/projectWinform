@@ -44,10 +44,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             btn_Game = new Guna.UI2.WinForms.Guna2Button();
             btn_App = new Guna.UI2.WinForms.Guna2Button();
@@ -64,16 +60,16 @@
             label3 = new Label();
             label5 = new Label();
             label2 = new Label();
-            btn_search = new Guna.UI2.WinForms.Guna2Button();
-            txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             txtsearch = new Guna.UI2.WinForms.Guna2TextBox();
             guna2vSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             panel2 = new Panel();
-            guna2vSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            guna2vSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             btn_giohang = new Guna.UI2.WinForms.Guna2Button();
+            panelChild = new Panel();
+            txtid = new Label();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -106,7 +102,7 @@
             btn_Game.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_Game.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_Game.FillColor = SystemColors.ButtonHighlight;
-            btn_Game.Font = new Font("UTM Avo", 10.8F, FontStyle.Italic, GraphicsUnit.Point);
+            btn_Game.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Italic, GraphicsUnit.Point);
             btn_Game.ForeColor = Color.Black;
             btn_Game.Location = new Point(9, 247);
             btn_Game.Name = "btn_Game";
@@ -124,7 +120,7 @@
             btn_App.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_App.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_App.FillColor = SystemColors.ButtonHighlight;
-            btn_App.Font = new Font("UTM Avo", 10.8F, FontStyle.Italic, GraphicsUnit.Point);
+            btn_App.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Italic, GraphicsUnit.Point);
             btn_App.ForeColor = Color.Black;
             btn_App.Location = new Point(9, 302);
             btn_App.Name = "btn_App";
@@ -144,7 +140,7 @@
             btn_all.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_all.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_all.FillColor = SystemColors.ButtonHighlight;
-            btn_all.Font = new Font("UTM Avo", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btn_all.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btn_all.ForeColor = Color.Black;
             btn_all.Location = new Point(9, 197);
             btn_all.Name = "btn_all";
@@ -156,6 +152,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(txtid);
             panel4.Controls.Add(lbl_username);
             panel4.Controls.Add(guna2CirclePictureBox1);
             panel4.Controls.Add(guna2Button2);
@@ -167,10 +164,10 @@
             // lbl_username
             // 
             lbl_username.AutoSize = true;
-            lbl_username.Font = new Font("UTM Avo", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_username.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             lbl_username.Location = new Point(34, 87);
             lbl_username.Name = "lbl_username";
-            lbl_username.Size = new Size(93, 23);
+            lbl_username.Size = new Size(86, 20);
             lbl_username.TabIndex = 1;
             lbl_username.Text = "Username";
             lbl_username.Click += lbl_username_Click;
@@ -255,77 +252,32 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("UTM Avo", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(221, 617);
             label3.Name = "label3";
-            label3.Size = new Size(588, 54);
+            label3.Size = new Size(534, 48);
             label3.TabIndex = 25;
             label3.Text = "Văn phòng Unicorn trực thuộc Centrix Corporation:\r\n📍 Địa chỉ: Số 51Bis Đường An Phú, P.An Phú, Thành phố Thủ Đức, Thành phố Hồ Chí Minh\r\n💳 Chấp nhận thanh toán Bank";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("UTM Avo", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(882, 595);
             label5.Name = "label5";
-            label5.Size = new Size(149, 22);
+            label5.Size = new Size(142, 18);
             label5.TabIndex = 26;
             label5.Text = "Liên hệ | Contact:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("UTM Avo", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(221, 595);
             label2.Name = "label2";
-            label2.Size = new Size(235, 22);
+            label2.Size = new Size(230, 18);
             label2.TabIndex = 27;
             label2.Text = "Thông tin chi tiết | For detail :";
-            // 
-            // btn_search
-            // 
-            btn_search.CustomBorderColor = Color.Black;
-            btn_search.CustomizableEdges = customizableEdges12;
-            btn_search.DisabledState.BorderColor = Color.DarkGray;
-            btn_search.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_search.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_search.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_search.FillColor = Color.Gray;
-            btn_search.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_search.ForeColor = Color.White;
-            btn_search.Image = (Image)resources.GetObject("btn_search.Image");
-            btn_search.Location = new Point(578, 62);
-            btn_search.Name = "btn_search";
-            btn_search.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            btn_search.Size = new Size(48, 45);
-            btn_search.TabIndex = 40;
-            // 
-            // txt_search
-            // 
-            txt_search.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            txt_search.BackColor = SystemColors.ButtonHighlight;
-            txt_search.BorderColor = Color.Black;
-            txt_search.BorderRadius = 5;
-            txt_search.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            txt_search.CustomizableEdges = customizableEdges14;
-            txt_search.DefaultText = "";
-            txt_search.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txt_search.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txt_search.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txt_search.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txt_search.FillColor = SystemColors.ButtonFace;
-            txt_search.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_search.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_search.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txt_search.IconLeftSize = new Size(38, 30);
-            txt_search.Location = new Point(275, 62);
-            txt_search.Name = "txt_search";
-            txt_search.PasswordChar = '\0';
-            txt_search.PlaceholderText = "Tìm kiếm sản phẩm";
-            txt_search.SelectedText = "";
-            txt_search.ShadowDecoration.CustomizableEdges = customizableEdges15;
-            txt_search.Size = new Size(351, 45);
-            txt_search.TabIndex = 39;
             // 
             // txtsearch
             // 
@@ -333,7 +285,7 @@
             txtsearch.BackColor = SystemColors.ButtonHighlight;
             txtsearch.BorderColor = Color.Black;
             txtsearch.BorderRadius = 20;
-            txtsearch.CustomizableEdges = customizableEdges16;
+            txtsearch.CustomizableEdges = customizableEdges12;
             txtsearch.DefaultText = "";
             txtsearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtsearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -350,7 +302,7 @@
             txtsearch.PasswordChar = '\0';
             txtsearch.PlaceholderText = "Search";
             txtsearch.SelectedText = "";
-            txtsearch.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            txtsearch.ShadowDecoration.CustomizableEdges = customizableEdges13;
             txtsearch.Size = new Size(0, 0);
             txtsearch.TabIndex = 38;
             // 
@@ -371,6 +323,13 @@
             panel2.Size = new Size(2, 676);
             panel2.TabIndex = 43;
             // 
+            // guna2Separator2
+            // 
+            guna2Separator2.Location = new Point(-525, 333);
+            guna2Separator2.Name = "guna2Separator2";
+            guna2Separator2.Size = new Size(1053, 10);
+            guna2Separator2.TabIndex = 35;
+            // 
             // guna2vSeparator2
             // 
             guna2vSeparator2.FillColor = Color.Black;
@@ -378,13 +337,6 @@
             guna2vSeparator2.Name = "guna2vSeparator2";
             guna2vSeparator2.Size = new Size(10, 677);
             guna2vSeparator2.TabIndex = 44;
-            // 
-            // guna2Separator2
-            // 
-            guna2Separator2.Location = new Point(-525, 333);
-            guna2Separator2.Name = "guna2Separator2";
-            guna2Separator2.Size = new Size(1053, 10);
-            guna2Separator2.TabIndex = 35;
             // 
             // guna2Separator3
             // 
@@ -402,20 +354,37 @@
             // 
             // btn_giohang
             // 
-            btn_giohang.CustomizableEdges = customizableEdges18;
+            btn_giohang.CustomizableEdges = customizableEdges14;
             btn_giohang.DisabledState.BorderColor = Color.DarkGray;
             btn_giohang.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_giohang.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_giohang.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_giohang.FillColor = SystemColors.ButtonHighlight;
-            btn_giohang.Font = new Font("UTM Avo", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btn_giohang.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btn_giohang.ForeColor = Color.Black;
             btn_giohang.Location = new Point(9, 360);
             btn_giohang.Name = "btn_giohang";
-            btn_giohang.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            btn_giohang.ShadowDecoration.CustomizableEdges = customizableEdges15;
             btn_giohang.Size = new Size(185, 44);
             btn_giohang.TabIndex = 47;
             btn_giohang.Text = "Giỏ hàng";
+            btn_giohang.Click += btn_giohang_Click;
+            // 
+            // panelChild
+            // 
+            panelChild.Location = new Point(216, 51);
+            panelChild.Name = "panelChild";
+            panelChild.Size = new Size(1038, 525);
+            panelChild.TabIndex = 48;
+            // 
+            // txtid
+            // 
+            txtid.AutoSize = true;
+            txtid.Location = new Point(57, 105);
+            txtid.Name = "txtid";
+            txtid.Size = new Size(50, 20);
+            txtid.TabIndex = 8;
+            txtid.Text = "label1";
             // 
             // Home_Cus
             // 
@@ -423,13 +392,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1262, 680);
+            Controls.Add(panelChild);
             Controls.Add(guna2vSeparator1);
             Controls.Add(btn_giohang);
             Controls.Add(guna2Separator1);
             Controls.Add(guna2Separator3);
             Controls.Add(panel2);
-            Controls.Add(btn_search);
-            Controls.Add(txt_search);
             Controls.Add(btn_all);
             Controls.Add(btn_App);
             Controls.Add(btn_Game);
@@ -463,7 +431,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_App;
         private Guna.UI2.WinForms.Guna2Button btn_all;
         private Panel panel4;
-        private Label lbl_username;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Panel panel10;
         private Guna.UI2.WinForms.Guna2Button btn_thoat;
@@ -475,8 +442,6 @@
         private Label label5;
         private Label label2;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button btn_search;
-        private Guna.UI2.WinForms.Guna2TextBox txt_search;
         private Guna.UI2.WinForms.Guna2TextBox txtsearch;
         private Guna.UI2.WinForms.Guna2VSeparator guna2vSeparator1;
         private Panel panel2;
@@ -485,5 +450,8 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Button btn_giohang;
+        private Panel panelChild;
+        public Label lbl_username;
+        public Label txtid;
     }
 }

@@ -1,21 +1,22 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+
 namespace QLBH_SOFTWARE
 
 {
 
     public partial class Login : Form
     {
-        string connect = @"Data Source=LAPTOP-DRPTOLNJ\LENHU;Initial Catalog=Centrix;Integrated Security=True";
-        SqlConnection conn;
-        SqlCommand cmd;
-        SqlDataAdapter adt;
-        DataTable dt;
-        public string username = "";
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        DBContext dbcon = new DBContext();
+        Home_Cus home;
+        SqlDataReader dr;
         public Login()
         {
             InitializeComponent();
-
+            cn = new SqlConnection(dbcon.connection());
         }
 
         private void txtemail_TextChanged(object sender, EventArgs e)
@@ -27,48 +28,53 @@ namespace QLBH_SOFTWARE
         {
             try
             {
-                using (conn = new SqlConnection(connect))
+                string _id = "";
+                string _name = "";
+                string _isAdmin = "";
+
+                cn.Open();
+                cmd = new SqlCommand("select * from ACCOUNT where userName = @name and passWord = @pass", cn);
+                cmd.Parameters.AddWithValue("@name", txtemail.Text);
+                cmd.Parameters.AddWithValue("@pass", txtpass.Text);
+                dr = cmd.ExecuteReader();
+                dr.Read();
+                if (dr.HasRows)
                 {
-                    conn.Open();
-                    string tk = txtemail.Text;
-                    string mk = txtpass.Text;
-                    string sql = "select * from ACCOUNT where USERNAME ='" + tk + "' and PASSWORD ='" + mk + "'and isAdmin='true'";
-
-                    cmd = new SqlCommand(sql, conn);
-
-                    SqlDataReader dtr = cmd.ExecuteReader();
-
-                    if (dtr.Read())
+                    _name = dr["userName"].ToString();
+                    _isAdmin = dr["isAdmin"].ToString();
+                    _id = dr["id"].ToString();
+                    if (_isAdmin == "admin")
                     {
-
-                        MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        TemporaryData.Username = tk;
+                        MessageBox.Show("welcom" + _id + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Home home = new Home();
-                        home.Show();
+                        home.txtId.Text = _id;
                         this.Hide();
+                        home.ShowDialog();
                     }
-                    else
+                    else if(_isAdmin == "user")
                     {
-                        //MessageBox.Show("Đăng nhập thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        TemporaryData.Username = tk;
-                        Home_Cus home = new Home_Cus();
-                        home.Show();
+                        MessageBox.Show("welcom" + _id + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Home_Cus homecus = new Home_Cus();
+                        homecus.txtid.Text = _id;
+                        homecus.ShowDialog();
                         this.Hide();
                     }
-
+                }
+                else
+                {
+                    MessageBox.Show("sai tên đăng nhập hoặc mật khẩu....vui lòng nhập lại", "Access denied", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cn.Close();
+                MessageBox.Show(ex.Message);
             }
         }
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(connect);
 
         }
 

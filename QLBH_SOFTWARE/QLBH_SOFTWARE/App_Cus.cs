@@ -13,14 +13,17 @@ namespace QLBH_SOFTWARE
 {
     public partial class App_Cus : Form
     {
-        string connect = @"Data Source=LAPTOP-DRPTOLNJ\LENHU;Initial Catalog=Centrix;Integrated Security=True";
-        SqlConnection conn;
-        SqlCommand cmd;
-        SqlDataAdapter adt;
-        DataTable dt = new DataTable();
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        DBContext dbcon = new DBContext();
+        private int newWidth = 150; // Kích thước mới của ảnh (độ rộng)
+        private int newHeight = 150;
+        private List<string> imageUrls = new List<string>();
         public App_Cus()
         {
             InitializeComponent();
+            cn = new SqlConnection(dbcon.connection());
+            
         }
 
         private void btn_thoat_Click(object sender, EventArgs e)
@@ -46,6 +49,38 @@ namespace QLBH_SOFTWARE
         {
 
             lbl_username.Text = TemporaryData.Username;
+        }
+        #region Method
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+                panelchildapp.Controls.Remove(activeForm);
+                activeForm = null; // Reset activeForm
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelchildapp.Controls.Add(childForm);
+            panelchildapp.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        #endregion Method
+
+        private void btn_gpt_Click(object sender, EventArgs e)
+        {
+
+            openChildForm(new ChildFormGpt());
+        }
+
+        private void btn_all_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ChildFormApp());
         }
     }
 }

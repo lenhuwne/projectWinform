@@ -12,9 +12,14 @@ namespace QLBH_SOFTWARE
     {
         SqlConnection conn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
-        SqlDataAdapter adt;
-        DataTable dt;
+        private String con;
 
+        public String connection()
+        {
+            con = @"Data Source=ANXEMER;Initial Catalog=Centrix1;Integrated Security=True";
+            
+            return con;
+        }
         
     }
 }

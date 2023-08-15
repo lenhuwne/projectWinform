@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             txtemail = new TextBox();
             txtpass = new TextBox();
@@ -58,11 +58,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("UTM Avo", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(543, 173);
             label1.Name = "label1";
-            label1.Size = new Size(186, 31);
+            label1.Size = new Size(175, 29);
             label1.TabIndex = 0;
             label1.Text = "Tên đăng nhập";
             // 
@@ -94,11 +94,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("UTM Avo", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.Black;
             label2.Location = new Point(543, 286);
             label2.Name = "label2";
-            label2.Size = new Size(121, 31);
+            label2.Size = new Size(109, 29);
             label2.TabIndex = 2;
             label2.Text = "Mật khẩu";
             // 
@@ -106,7 +106,7 @@
             // 
             button1.AccessibleRole = AccessibleRole.None;
             button1.BackColor = SystemColors.ActiveCaptionText;
-            button1.Font = new Font("UTM Avo", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Location = new Point(778, 445);
             button1.Name = "button1";
@@ -164,7 +164,7 @@
             guna2CirclePictureBox1.Location = new Point(35, 101);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             guna2CirclePictureBox1.Padding = new Padding(1);
-            guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges1;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CirclePictureBox1.Size = new Size(300, 300);
             guna2CirclePictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -184,7 +184,7 @@
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges5;
+            guna2Button1.CustomizableEdges = customizableEdges2;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -196,7 +196,7 @@
             guna2Button1.ImageSize = new Size(25, 25);
             guna2Button1.Location = new Point(1027, 4);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges3;
             guna2Button1.Size = new Size(50, 45);
             guna2Button1.TabIndex = 10;
             guna2Button1.Click += guna2Button1_Click;
@@ -204,7 +204,7 @@
             // button2
             // 
             button2.BackColor = SystemColors.ActiveCaptionText;
-            button2.Font = new Font("UTM Avo", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ButtonHighlight;
             button2.Location = new Point(543, 445);
             button2.Name = "button2";

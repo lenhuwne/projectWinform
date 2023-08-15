@@ -14,15 +14,15 @@ namespace QLBH_SOFTWARE
 {
     public partial class Home : Form
     {
-        string connect = @"Data Source=LAPTOP-DRPTOLNJ\LENHU;Initial Catalog=Centrix;Integrated Security=True";
-        SqlConnection conn;
-        SqlCommand cmd;
-        SqlDataAdapter adt;
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        DBContext dbcon = new DBContext();
         DataTable dt = new DataTable();
         public string username = "";
         public Home()
         {
             InitializeComponent();
+            cn = new SqlConnection(dbcon.connection());
             this.username = username;
 
         }
@@ -92,7 +92,17 @@ namespace QLBH_SOFTWARE
 
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
+            Order order = new Order(this);
+            order.Show();
+        }
+        #region Method
 
+        #endregion Method
+
+        private void btn_cash_Click(object sender, EventArgs e)
+        {
+            Cash cash = new Cash(this);
+            cash.Show();
         }
     }
 }

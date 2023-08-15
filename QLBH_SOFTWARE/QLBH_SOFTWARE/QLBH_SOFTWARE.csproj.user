@@ -14,10 +14,25 @@
     <Compile Update="Cash.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CashProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildFormApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildFormGpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildFormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Game_Cus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildFromHoctap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Home_Cus.cs">

@@ -52,8 +52,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btn_log = new Guna.UI2.WinForms.Guna2Button();
             btn_adventure = new Guna.UI2.WinForms.Guna2Button();
             btn_horror = new Guna.UI2.WinForms.Guna2Button();
@@ -67,8 +65,8 @@
             panel5 = new Panel();
             guna2vSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            guna2vSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             btn_back = new Guna.UI2.WinForms.Guna2Button();
-            btn_search = new Guna.UI2.WinForms.Guna2Button();
             txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             txtsearch = new Guna.UI2.WinForms.Guna2TextBox();
             panel6 = new Panel();
@@ -77,7 +75,6 @@
             panel7 = new Panel();
             panel12 = new Panel();
             btn_thoat = new Guna.UI2.WinForms.Guna2Button();
-            guna2vSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             panel5.SuspendLayout();
@@ -110,7 +107,7 @@
             btn_adventure.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_adventure.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_adventure.FillColor = SystemColors.ButtonHighlight;
-            btn_adventure.Font = new Font("UTM Avo", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btn_adventure.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btn_adventure.ForeColor = Color.Black;
             btn_adventure.Location = new Point(9, 447);
             btn_adventure.Name = "btn_adventure";
@@ -127,7 +124,7 @@
             btn_horror.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_horror.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_horror.FillColor = SystemColors.ButtonHighlight;
-            btn_horror.Font = new Font("UTM Avo", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btn_horror.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btn_horror.ForeColor = Color.Black;
             btn_horror.Location = new Point(9, 347);
             btn_horror.Name = "btn_horror";
@@ -144,7 +141,7 @@
             btn_openworld.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_openworld.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_openworld.FillColor = SystemColors.ButtonHighlight;
-            btn_openworld.Font = new Font("UTM Avo", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btn_openworld.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btn_openworld.ForeColor = Color.Black;
             btn_openworld.Location = new Point(9, 297);
             btn_openworld.Name = "btn_openworld";
@@ -161,7 +158,7 @@
             btn_sinhton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_sinhton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_sinhton.FillColor = SystemColors.ButtonHighlight;
-            btn_sinhton.Font = new Font("UTM Avo", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btn_sinhton.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btn_sinhton.ForeColor = Color.Black;
             btn_sinhton.Location = new Point(9, 247);
             btn_sinhton.Name = "btn_sinhton";
@@ -178,7 +175,7 @@
             btn_hanhdong.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_hanhdong.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_hanhdong.FillColor = SystemColors.ButtonHighlight;
-            btn_hanhdong.Font = new Font("UTM Avo", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btn_hanhdong.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btn_hanhdong.ForeColor = Color.Black;
             btn_hanhdong.Location = new Point(9, 397);
             btn_hanhdong.Name = "btn_hanhdong";
@@ -197,7 +194,7 @@
             btn_all.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btn_all.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btn_all.FillColor = SystemColors.ButtonHighlight;
-            btn_all.Font = new Font("UTM Avo", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btn_all.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btn_all.ForeColor = Color.Black;
             btn_all.Location = new Point(3, 197);
             btn_all.Name = "btn_all";
@@ -220,10 +217,10 @@
             // lbl_username
             // 
             lbl_username.AutoSize = true;
-            lbl_username.Font = new Font("UTM Avo", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_username.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             lbl_username.Location = new Point(34, 93);
             lbl_username.Name = "lbl_username";
-            lbl_username.Size = new Size(100, 25);
+            lbl_username.Size = new Size(92, 22);
             lbl_username.TabIndex = 1;
             lbl_username.Text = "Username";
             lbl_username.Click += lbl_username_Click;
@@ -253,7 +250,6 @@
             panel5.Controls.Add(btn_back);
             panel5.Controls.Add(btn_hanhdong);
             panel5.Controls.Add(btn_horror);
-            panel5.Controls.Add(btn_search);
             panel5.Controls.Add(btn_openworld);
             panel5.Controls.Add(txt_search);
             panel5.Controls.Add(btn_sinhton);
@@ -284,6 +280,14 @@
             guna2Separator1.Size = new Size(1053, 10);
             guna2Separator1.TabIndex = 40;
             // 
+            // guna2vSeparator2
+            // 
+            guna2vSeparator2.FillColor = Color.Black;
+            guna2vSeparator2.Location = new Point(200, 3);
+            guna2vSeparator2.Name = "guna2vSeparator2";
+            guna2vSeparator2.Size = new Size(10, 674);
+            guna2vSeparator2.TabIndex = 41;
+            // 
             // btn_back
             // 
             btn_back.CustomizableEdges = customizableEdges16;
@@ -303,25 +307,6 @@
             btn_back.TabIndex = 38;
             btn_back.Click += btn_back_Click;
             // 
-            // btn_search
-            // 
-            btn_search.CustomBorderColor = Color.Black;
-            btn_search.CustomizableEdges = customizableEdges18;
-            btn_search.DisabledState.BorderColor = Color.DarkGray;
-            btn_search.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_search.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_search.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_search.FillColor = Color.Gray;
-            btn_search.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_search.ForeColor = Color.White;
-            btn_search.Image = (Image)resources.GetObject("btn_search.Image");
-            btn_search.Location = new Point(556, 61);
-            btn_search.Name = "btn_search";
-            btn_search.ShadowDecoration.CustomizableEdges = customizableEdges19;
-            btn_search.Size = new Size(48, 45);
-            btn_search.TabIndex = 37;
-            btn_search.Click += btn_search_Click;
-            // 
             // txt_search
             // 
             txt_search.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -329,7 +314,7 @@
             txt_search.BorderColor = Color.Black;
             txt_search.BorderRadius = 5;
             txt_search.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            txt_search.CustomizableEdges = customizableEdges20;
+            txt_search.CustomizableEdges = customizableEdges18;
             txt_search.DefaultText = "";
             txt_search.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txt_search.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -340,12 +325,12 @@
             txt_search.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_search.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txt_search.IconLeftSize = new Size(38, 30);
-            txt_search.Location = new Point(253, 61);
+            txt_search.Location = new Point(787, 3);
             txt_search.Name = "txt_search";
             txt_search.PasswordChar = '\0';
             txt_search.PlaceholderText = "Tìm kiếm sản phẩm";
             txt_search.SelectedText = "";
-            txt_search.ShadowDecoration.CustomizableEdges = customizableEdges21;
+            txt_search.ShadowDecoration.CustomizableEdges = customizableEdges19;
             txt_search.Size = new Size(351, 45);
             txt_search.TabIndex = 36;
             // 
@@ -355,7 +340,7 @@
             txtsearch.BackColor = SystemColors.ButtonHighlight;
             txtsearch.BorderColor = Color.Black;
             txtsearch.BorderRadius = 20;
-            txtsearch.CustomizableEdges = customizableEdges22;
+            txtsearch.CustomizableEdges = customizableEdges20;
             txtsearch.DefaultText = "";
             txtsearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtsearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -372,7 +357,7 @@
             txtsearch.PasswordChar = '\0';
             txtsearch.PlaceholderText = "Search";
             txtsearch.SelectedText = "";
-            txtsearch.ShadowDecoration.CustomizableEdges = customizableEdges23;
+            txtsearch.ShadowDecoration.CustomizableEdges = customizableEdges21;
             txtsearch.Size = new Size(0, 0);
             txtsearch.TabIndex = 35;
             // 
@@ -424,7 +409,7 @@
             // 
             // btn_thoat
             // 
-            btn_thoat.CustomizableEdges = customizableEdges24;
+            btn_thoat.CustomizableEdges = customizableEdges22;
             btn_thoat.DisabledState.BorderColor = Color.DarkGray;
             btn_thoat.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_thoat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -436,18 +421,10 @@
             btn_thoat.ImageSize = new Size(25, 25);
             btn_thoat.Location = new Point(1209, 0);
             btn_thoat.Name = "btn_thoat";
-            btn_thoat.ShadowDecoration.CustomizableEdges = customizableEdges25;
+            btn_thoat.ShadowDecoration.CustomizableEdges = customizableEdges23;
             btn_thoat.Size = new Size(50, 50);
             btn_thoat.TabIndex = 2;
             btn_thoat.Click += btn_thoat_Click;
-            // 
-            // guna2vSeparator2
-            // 
-            guna2vSeparator2.FillColor = Color.Black;
-            guna2vSeparator2.Location = new Point(200, 3);
-            guna2vSeparator2.Name = "guna2vSeparator2";
-            guna2vSeparator2.Size = new Size(10, 674);
-            guna2vSeparator2.TabIndex = 41;
             // 
             // Game_Cus
             // 
@@ -486,7 +463,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_thoat;
         private Panel panel6;
         private Guna.UI2.WinForms.Guna2Button btn_log;
-        private Guna.UI2.WinForms.Guna2Button btn_search;
         private Guna.UI2.WinForms.Guna2TextBox txt_search;
         private Guna.UI2.WinForms.Guna2TextBox txtsearch;
         private Guna.UI2.WinForms.Guna2Button btn_back;

@@ -13,27 +13,46 @@ namespace QLBH_SOFTWARE
 {
     public partial class OrderDetail : Form
     {
-        string connect = @"Data Source=LAPTOP-DRPTOLNJ\LENHU;Initial Catalog=Centrix;Integrated Security=True";
-        SqlConnection conn;
-        SqlCommand cmd;
-        SqlDataAdapter adt;
-        DataTable dt = new DataTable();
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        DBContext dbcon = new DBContext();
+        SqlDataReader dr;
+        Order order;
+        string transno = "";
 
-        public OrderDetail()
+        public OrderDetail(Order form)
         {
             InitializeComponent();
+            cn = new SqlConnection(dbcon.connection());
+            order = form;
+            //loadCash();
+
         }
 
         private void OrderDetail_Load(object sender, EventArgs e)
         {
-            dgv_order.Columns[0].HeaderText = "Sản phẩm";
-            dgv_order.Columns[1].HeaderText = "Số lượng";
-            dgv_order.Columns[2].HeaderText = "Giá";
-            dgv_order.Columns[0].Width = 250;
-            dgv_order.Columns[1].Width = 40;
-            dgv_order.Columns[2].Width = 50;
-            this.dgv_order.DefaultCellStyle.Font = new Font("UTM avo", 10);
-            this.dgv_order.CellBorderStyle = DataGridViewCellBorderStyle.None;
+
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+
+        }
+        #region Method
+        //public void loadCash()
+        //{
+        //    order.transno = transno;
+        //    cn.Open();
+        //    cmd = new SqlCommand("SELECT * FROM CASH INNER JOIN ORDERDETAIL ON CASH.transno = ORDERDETAIL.transno where CASH.transno like '" + transno + "'", cn);
+        //    dr = cmd.ExecuteReader();
+        //    while (dr.Read())
+        //    {
+
+        //        dgvDonhang.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[4].ToString(), dr[3].ToString(), dr[2].ToString());
+        //    }
+        //    dr.Close();
+        //    cn.Close();
+        //}
+        #endregion Method
     }
 }

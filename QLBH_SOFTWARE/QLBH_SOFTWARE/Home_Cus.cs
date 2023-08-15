@@ -13,16 +13,15 @@ namespace QLBH_SOFTWARE
 {
     public partial class Home_Cus : Form
     {
-        string connect = @"Data Source=LAPTOP-DRPTOLNJ\LENHU;Initial Catalog=Centrix;Integrated Security=True";
-        SqlConnection conn;
-        SqlCommand cmd;
-        SqlDataAdapter adt;
-        DataTable dt = new DataTable();
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        DBContext dbcon = new DBContext();
         public Home_Cus()
         {
             InitializeComponent();
-        }
-
+            cn = new SqlConnection(dbcon.connection());
+            openChildForm(new ChildFormHome());
+        } 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Login lg = new Login();
@@ -60,6 +59,26 @@ namespace QLBH_SOFTWARE
         private void lbl_username_Click(object sender, EventArgs e)
         {
 
+        }
+        #region Method
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null) activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChild.Controls.Add(childForm);
+            panelChild.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        #endregion Method
+
+        private void btn_giohang_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Cash(this));
         }
     }
 }
